@@ -1,0 +1,10 @@
+:root {
+    --label-colorlightprimary: rgba(0, 0, 0, 1);
+    --default-bold-subheadline-font-family: "SFPro Text-Semibold", Helvetica;
+    --default-bold-subheadline-font-weight: 400;
+    --default-bold-subheadline-font-size: 15px;
+    --default-bold-subheadline-letter-spacing: -0.5px;
+    --default-bold-subheadline-line-height: 20px;
+    --default-bold-subheadline-font-style: normal;
+  }
+  
