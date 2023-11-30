@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="login-page-style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'global.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styleguide.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'login-page-style.css')}}" />
   </head>
   <body>
     <div class="iphone-component">
@@ -15,7 +15,7 @@
         <div class="text-wrapper-4">New user</div>
         <div class="overlap"><div class="text-wrapper-5">Username</div></div>
         <div class="div-wrapper"><div class="text-wrapper-6">Password</div></div>
-        <img class="image" src="img/columbia-logo.png" />
+        <img class="image" src="{{ url_for('static', filename = 'img/columbia-logo.png')}}"/>
       </div>
     </div>
   </body>
