@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"  href="{{ url_for('static', filename = 'global.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styleguide.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}" />
   </head>
   <body>
     <div class="iphone-component">
       <div class="div">
         <div class="overlap-group">
-          <img class="image" src="img/search.png" />
+          <img class="image" src="{{ url_for('static', filename='img/search.png') }}" />
           <div class="text-wrapper-2">search</div>
         </div>
         <div class="overlap-2">
-          <img class="ellipse" src="img/painting.png" />
+          <img class="ellipse" src="{{ url_for('static', filename='img/painting.png') }}" />
           <div class="text-wrapper-3">painting</div>
         </div>
         <div class="overlap-3">
-          <img class="ellipse" src="img/sculpture.png" />
+          <img class="ellipse" src="{{ url_for('static', filename='img/sculpture.png') }}" />
           <div class="text-wrapper-4">sculpture</div>
         </div>
         <div class="overlap-group-2">
-          <img class="ellipse" src="img/ceramics.png" />
+          <img class="ellipse" src="{{ url_for('static', filename='img/ceramics.png') }}" />
           <div class="text-wrapper-4">ceramics</div>
         </div>
         <div class="overlap-4">
-          <img class="ellipse" src="img/street_art.png" />
+          <img class="ellipse" src="{{ url_for('static', filename='img/street_art.png') }}" />
           <div class="text-wrapper-5">street art</div>
         </div>
         <div class="overlap-5">
-          <img class="ellipse" src="img/photography.png" />
+          <img class="ellipse" src="{{ url_for('static', filename='img/photography.png') }}" />
           <div class="text-wrapper-6">photography</div>
         </div>
         <div class="overlap-6">
-          <img class="rectangle-3" src="img/john_art.png" />
+          <img class="rectangle-3" src="{{ url_for('static', filename='img/john_art.png') }}" />
           <div class="rectangle-4"></div>
-          <img class="ellipse-2" src="img/john_pic.png" />
+          <img class="ellipse-2" src="{{ url_for('static', filename='img/john_pic.png') }}" />
           <div class="text-wrapper-7">Motion in Manhattan</div>
           <div class="text-wrapper-8">John Smith</div>
           <div class="text-wrapper-9">Street photographer. CC ‘25.</div>
@@ -44,3 +44,4 @@
     </div>
   </body>
 </html>
+

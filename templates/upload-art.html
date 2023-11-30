@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="upload-art-style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'global.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styleguide.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'upload-art-style.css')}}" />
   </head>
   <body>
     <div class="iphone-component">
@@ -14,17 +14,17 @@
           <div class="overlap-group">
             <div class="group-2">
               <div class="text-wrapper-2">LionArt</div>
-              <img class="line" src="img/line-3.svg" />
-              <img class="img" src="img/line-4.svg" />
+              <img class="line" src="{{ url_for('static', filename='img/line-3.svg') }}" />
+              <img class="img" src="{{ url_for('static', filename='img/line-4.svg') }}" />
             </div>
-            <img class="user-light" src="img/profile-button.png" />
-            <img class="image" src="img/back-button.png" />
+            <img class="user-light" src="{{ url_for('static', filename='img/profile-button.png') }}" />
+            <img class="image" src="{{ url_for('static', filename='img/back-button.png') }}" />
           </div>
         </div>
         <div class="text-wrapper-3">Upload art</div>
         
         <div class="text-wrapper-4">Title</div>
-        <img class="line-2" src="img/line-17.svg" />
+        <img class="line-2" src="{{ url_for('static', filename='img/line-17.svg') }}" />
         <div class="text-wrapper-5">Art piece title</div>
         <div class="overlap"><div class="text-wrapper-6">Description of art piece</div></div>
         <div class="text-wrapper-7">Description</div>
