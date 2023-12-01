@@ -21,11 +21,11 @@ def display_create_account():
 def display_create_profile():
     return render_template('create-profile.html')
 
-@app.route('/LandingPage')
+@app.route('/LandingPage', methods=['GET','POST'])
 def display_landing_page():
     return render_template('landing-page.html')
 
-@app.route('/Login')
+@app.route('/Login', methods=['GET','POST'])
 def display_login_page():
     return render_template('login-page.html')
 
