@@ -1,0 +1,150 @@
+html {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+  }
+
+.iphone-screen {
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: #d9d9d9;
+    width: 390px;
+    height: 844px;
+    position: relative;
+  }
+
+.navigation-bar {
+    width: 390px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+.navigation-bar-element {
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navigation-bar-image {
+  width: 40px;
+  height: 40px;
+}
+
+.search-bar {
+  margin: 0 auto;
+  width: 370px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.actual-search-bar {
+  font-family: "SFPro Text-Semibold", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+  width: 85%
+}
+
+.filter-list {
+  width: 370px;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.filter-item {
+  width: 70px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.filter-image {
+  width: 70px;
+  height: 70px;
+}
+
+.filter-text {
+  font-family: "SFPro Text-Semibold", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.art-display {
+  width: 370px;
+  height: 100vh;
+  overflow-y: auto;
+  margin: 0 auto;
+}
+
+.art-block {
+  width: 366px;
+  border: 2pt solid black;
+  margin: 0 auto 10px;
+}
+
+.art-piece-block {
+  width: 366px;
+  height: auto;
+  margin-bottom: 2px solid black;
+}
+
+.art-caption-block {
+  width: 366px;
+  height: 80px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center
+}
+
+.profile-picture {
+  width: 75px;
+  height: 75px;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 7px;
+}
+
+.artist-bio {
+  font-weight: 100px;
+  color: #A8A8A8;
+}

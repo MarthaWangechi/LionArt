@@ -1,57 +1,127 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet"  href="{{ url_for('static', filename = 'global.css')}}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'styleguide.css')}}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'landing-page-style.css')}}" />
   </head>
   <body>
-    <div class="iphone-component">
-      <div class="div">
-        <div class="home-bar">
-          <div class="group-2">
-            <div class="text-wrapper-2">LionArt</div>
-            <img class="line" src="{{ url_for('static', filename = 'img/line-3.svg')}}"/>
-            <!-- <img class="img" src="{{ url_for('static', filename = 'img/line-4.svg')}}" /> -->
-          </div>
-          <!--
-          <img class="user-light" src="{{ url_for('static', filename = 'img/profile-button.png')}}" />
-          <img class="image" src="{{ url_for('static', filename = 'img/back-button.png')}}" />-->
+    <div class="iphone-screen">
+        <div class="navigation-bar">
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/back-button.png') }}" alt="Back Button"></div>
+            <div class="navigation-bar-element">LionArt</div>
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png') }}" alt="Menu"></div>
         </div>
-        <div class="overlap-group">
-          <img class="image" src="{{ url_for('static', filename='img/search.png') }}" />
-          <div class="text-wrapper-2"><input type="text" style="border: 0px; width: fit-content;" value="search"></div>
+        <div class="search-bar">
+            <img class="search-icon" src="{{ url_for('static', filename = 'img/search.png') }}" alt="Search Icon">
+            <input type="text" class="actual-search-bar" placeholder="Search">
         </div>
-        <div class="overlap-2">
-          <img class="ellipse" src="{{ url_for('static', filename='img/painting.png') }}" />
-          <div class="text-wrapper-3">painting</div>
+        <div class="filter-list">
+            <div class="filter-item">
+                <img class="filter-image" src="{{ url_for('static', filename = 'img/painting.png') }}"> 
+                <div class="filter-text">painting</div>
+            </div>
+            <div class="filter-item">
+                <img class="filter-image" src="{{ url_for('static', filename = 'img/sculpture.png') }}"> 
+                <div class="filter-text">sculpture</div>
+            </div>
+            <div class="filter-item">
+                <img class="filter-image" src="{{ url_for('static', filename = 'img/photography.png') }}"> 
+                <div class="filter-text">photography</div>
+            </div>
+            <div class="filter-item">
+                <img class="filter-image" src="{{ url_for('static', filename = 'img/ceramics.png') }}"> 
+                <div class="filter-text">ceramics</div>
+            </div>
+            <div class="filter-item">
+                <img class="filter-image" src="{{ url_for('static', filename = 'img/street_art.png') }}"> 
+                <div class="filter-text">street art</div>
+            </div>
+            <div class="filter-item">
+                <img class="filter-image" src="{{ url_for('static', filename = 'img/photography.png') }}"> 
+                <div class="filter-text">photography</div>
+            </div>
+            <div class="filter-item">
+                <img class="filter-image" src="{{ url_for('static', filename = 'img/painting.png') }}"> 
+                <div class="filter-text">painting</div>
+            </div>
+            <div class="filter-item">
+                <img class="filter-image" src="{{ url_for('static', filename = 'img/sculpture.png') }}"> 
+                <div class="filter-text">sculpture</div>
+            </div>
         </div>
-        <div class="overlap-3">
-          <img class="ellipse" src="{{ url_for('static', filename='img/sculpture.png') }}" />
-          <div class="text-wrapper-4">sculpture</div>
+        <div class="art-display">
+            <div class="scrollable-area">
+                <div class="art-block">
+                    <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                    <div class="art-caption-block">
+                        <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                        <div class="art-caption">
+                            <div class="title">
+                                Motion In Manhattan
+                            </div>
+                            <div class="artist-bio">
+                                John Smith <br> Street Photographer. CC '25
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-block">
+                  <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                  <div class="art-caption-block">
+                      <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                      <div class="art-caption">
+                          <div class="title">
+                              Motion In Manhattan
+                          </div>
+                          <div class="artist-bio">
+                              John Smith <br> Street Photographer. CC '25
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="art-block">
+                  <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                  <div class="art-caption-block">
+                      <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                      <div class="art-caption">
+                          <div class="title">
+                              Motion In Manhattan
+                          </div>
+                          <div class="artist-bio">
+                              John Smith <br> Street Photographer. CC '25
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="art-block">
+                  <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                  <div class="art-caption-block">
+                      <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                      <div class="art-caption">
+                          <div class="title">
+                              Motion In Manhattan
+                          </div>
+                          <div class="artist-bio">
+                              John Smith <br> Street Photographer. CC '25
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="art-block">
+                  <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                  <div class="art-caption-block">
+                      <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                      <div class="art-caption">
+                          <div class="title">
+                              Motion In Manhattan
+                          </div>
+                          <div class="artist-bio">
+                              John Smith <br> Street Photographer. CC '25
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
         </div>
-        <div class="overlap-group-2">
-          <img class="ellipse" src="{{ url_for('static', filename='img/ceramics.png') }}" />
-          <div class="text-wrapper-4">ceramics</div>
-        </div>
-        <div class="overlap-4">
-          <img class="ellipse" src="{{ url_for('static', filename='img/street_art.png') }}" />
-          <div class="text-wrapper-5">street art</div>
-        </div>
-        <div class="overlap-5">
-          <img class="ellipse" src="{{ url_for('static', filename='img/photography.png') }}" />
-          <div class="text-wrapper-6">photography</div>
-        </div>
-        <div class="overlap-6">
-          <img class="rectangle-3" src="{{ url_for('static', filename='img/john_art.png') }}" />
-          <div class="rectangle-4"></div>
-          <a href="{{url_for('display_artist_profile')}}"><img class="ellipse-2" src="{{ url_for('static', filename='img/john_pic.png') }}" /></a>
-          <div class="text-wrapper-7">Motion in Manhattan</div>
-          <div class="text-wrapper-8">John Smith</div>
-          <div class="text-wrapper-9">Street photographer. CC ‘25.</div>
-        </div>
-      </div>
     </div>
   </body>
 </html>
-
