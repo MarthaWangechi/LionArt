@@ -8,6 +8,15 @@
   <body>
     <div class="iphone-component">
       <div class="div">
+        <div class="home-bar">
+          <div class="group-2">
+            <div class="text-wrapper-2">LionArt</div>
+            <img class="line" src="{{ url_for('static', filename = 'img/line-3.svg')}}"/>
+            <img class="img" src="{{ url_for('static', filename = 'img/line-4.svg')}}" />
+          </div>
+          <img class="user-light" src="{{ url_for('static', filename = 'img/profile-button.png')}}" />
+          <img class="image" src="{{ url_for('static', filename = 'img/back-button.png')}}" />
+        </div>
         <div class="overlap-group">
           <img class="image" src="{{ url_for('static', filename='img/search.png') }}" />
           <div class="text-wrapper-2">search</div>
@@ -35,7 +44,7 @@
         <div class="overlap-6">
           <img class="rectangle-3" src="{{ url_for('static', filename='img/john_art.png') }}" />
           <div class="rectangle-4"></div>
-          <img class="ellipse-2" src="{{ url_for('static', filename='img/john_pic.png') }}" />
+          <a href="{{url_for('display_artist_profile')}}"><img class="ellipse-2" src="{{ url_for('static', filename='img/john_pic.png') }}" /></a>
           <div class="text-wrapper-7">Motion in Manhattan</div>
           <div class="text-wrapper-8">John Smith</div>
           <div class="text-wrapper-9">Street photographer. CC ‘25.</div>
