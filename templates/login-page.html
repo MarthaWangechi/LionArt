@@ -13,7 +13,7 @@
             <input id="password" type="text" placeholder="Password">
             <button id="loginButton" onclick="window.location.href = '{{ url_for('display_landing_page') }}';">Login</button>
             <a id="forgot-password" class="login-help-text">Forgot password?</a>
-            <a class="login-help-text">New user</a>
+            <a class="login-help-text" href = "{{ url_for('display_create_account')}}">New user</a>
         </div>
     </div>
   </body>
