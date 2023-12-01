@@ -146,8 +146,6 @@
     top: 458px;
     left: 43px;
     background-color: #ffffff;
-    border: 3px solid;
-    border-color: #000000;
   }
   
   .iphone-component .text-wrapper-5 {
@@ -157,7 +155,7 @@
     opacity: 0.5;
     font-family: "Kantumruy-Regular", Helvetica;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
     font-size: 15px;
     text-align: center;
     letter-spacing: -0.5px;
@@ -197,5 +195,22 @@
     top: 169px;
     left: 75px;
     object-fit: cover;
+  }
+
+  input[type="text"],
+  select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 300px;
+  }
+  
+  input[type="text"]:focus,
+  select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
   
