@@ -21,7 +21,7 @@
             <img class="image" src="{{ url_for('static', filename = 'img/back-button.png')}}" />
           </div>
         </div>
-        <div class="overlap"><div class="text-wrapper-3"><button>Save profile</button></div></div>
+        <div class="overlap"><div class="text-wrapper-3"><button onclick="window.location.href = '{{ url_for('display_artist_profile') }}';">Save profile</button></div></div>
         <img class="ellipse" src="{{ url_for('static', filename = 'img/john_pic.png')}}" />
         <div class="text-wrapper-4">Change/edit profile photo</div>
         <div class="text-wrapper-5"><input type="text" class="form-control" value="Profile name"></div>

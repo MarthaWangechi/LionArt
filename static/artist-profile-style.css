@@ -229,7 +229,7 @@
     position: absolute;
     width: 139px;
     height: 84px;
-    top: 226px;
+    top: 186px;
     left: 192px;
   }
   
@@ -237,7 +237,7 @@
     position: relative;
     align-self: stretch;
     font-family: "Kantumruy-Bold", Helvetica;
-    font-weight: 700;
+    font-weight: 600;
     color: #000000;
     font-size: 30px;
     text-align: center;
