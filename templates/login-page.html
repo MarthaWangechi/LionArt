@@ -4,13 +4,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename = 'global.css')}}" />
     <link rel="stylesheet" href="{{ url_for('static', filename = 'styleguide.css')}}" />
     <link rel="stylesheet" href="{{ url_for('static', filename = 'login-page-style.css')}}" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{{ url_for('static', filename = 'login-page.js')}}"></script>
   </head>
   <body>
     <div class="iphone-component">
       <div class="div">
         <div class="home-indicator"></div>
         <div class="rectangle-2"></div>
-        <div class="overlap-group"><div class="text-wrapper-2"><input type="button" href="{{url_for('display_landing_page')}}" value='Log in'></div></div>
+        <div class="overlap-group"><div class="text-wrapper-2"><button class="button-class" id="Enter" type="button" onclick="window.location.href = '{{ url_for('display_landing_page') }}';" class="button">Log In</button></div></div>
         <div class="text-wrapper-3">Forgot password?</div>
         <div class="text-wrapper-4">New user</div>
         <div class="overlap"><div class="text-wrapper-5">Username</div></div>

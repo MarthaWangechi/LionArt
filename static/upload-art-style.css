@@ -335,4 +335,20 @@
     line-height: 20px;
     white-space: nowrap;
   }
+
+  .iphone-component .button-class {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+
+    color: #000000;
+    font-family: "Kantumruy-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 15px;
+
+    position: absolute;
+    top: 90%;
+    left: 40%;
+  }
   
