@@ -205,7 +205,7 @@
   .iphone-component .text-wrapper-5 {
     position: absolute;
     top: 352px;
-    left: 148px;
+    left: 48px;
     opacity: 0.5;
     font-family: "Kantumruy-Regular", Helvetica;
     font-weight: 400;
@@ -229,7 +229,7 @@
   .iphone-component .text-wrapper-6 {
     position: absolute;
     top: 462px;
-    left: 170px;
+    left: 48px;
     opacity: 0.5;
     font-family: "Kantumruy-Regular", Helvetica;
     font-weight: 400;
@@ -350,7 +350,7 @@
   .iphone-component .text-wrapper-11 {
     position: absolute;
     top: 426px;
-    left: 157px;
+    left: 48px;
     opacity: 0.5;
     font-family: "Kantumruy-Regular", Helvetica;
     font-weight: 400;
@@ -374,7 +374,7 @@
   .iphone-component .text-wrapper-12 {
     position: absolute;
     top: 388px;
-    left: 168px;
+    left: 48px;
     opacity: 0.5;
     font-family: "Kantumruy-Regular", Helvetica;
     font-weight: 400;
@@ -428,3 +428,19 @@
     object-fit: cover;
   }
   
+  input[type="text"],
+  select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 300px;
+  }
+  
+  input[type="text"]:focus,
+  select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
