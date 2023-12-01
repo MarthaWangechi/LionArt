@@ -8,9 +8,23 @@
   <body>
     <div class="iphone-component">
       <div class="div">
-        <div class="overlap-group">
+        <div class="home-indicator"></div>
+       
+        <div class="rectangle-2"></div>
+        <div class="group">
+          <div class="overlap-group"> <!--
+            <div class="group-2">
+              <div class="text-wrapper-2">LionArt</div>
+              <img class="line" src="{{ url_for('static', filename='img/line-3.svg') }}" />
+              <img class="img" src="{{ url_for('static', filename='img/line-4.svg') }}" />
+            </div>
+            <img class="user-light" src="{{ url_for('static', filename='img/profile-button.png') }}" />
+            <img class="image" src="{{ url_for('static', filename='img/back-button.png') }}" />
+          </div>
+        </div>
+        <div>-->
           <img class="image" src="{{ url_for('static', filename='img/search.png') }}" />
-          <div class="text-wrapper-2">search</div>
+          <div class="text-wrapper-2"><input type="text" style="border: 0px; width: fit-content;" value="search"></div>
         </div>
         <div class="overlap-2">
           <img class="ellipse" src="{{ url_for('static', filename='img/painting.png') }}" />
