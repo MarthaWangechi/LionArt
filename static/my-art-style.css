@@ -1,12 +1,17 @@
-.iphone-component {
+html {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
   }
-  
-  .iphone-component .div {
+
+.iphone-screen {
     background-color: #ffffff;
     overflow: hidden;
     border: 2px solid;
@@ -15,305 +20,104 @@
     height: 844px;
     position: relative;
   }
-  
-  .iphone-component .notch {
-    position: absolute;
-    width: 164px;
-    height: 31px;
-    top: 0;
-    left: 113px;
-  }
-  
-  .iphone-component .rectangle {
-    position: absolute;
-    width: 18px;
-    height: 7px;
-    top: 21px;
-    left: 341px;
-  }
-  
-  .iphone-component .wifi {
-    position: absolute;
-    width: 15px;
-    height: 11px;
-    top: 19px;
-    left: 319px;
-  }
-  
-  .iphone-component .mobile-signal {
-    position: absolute;
-    width: 17px;
-    height: 11px;
-    top: 20px;
-    left: 297px;
-  }
-  
-  .iphone-component .text-wrapper {
-    position: absolute;
-    width: 54px;
-    top: 13px;
-    left: 31px;
-    font-family: var(--default-bold-subheadline-font-family);
-    font-weight: var(--default-bold-subheadline-font-weight);
-    color: var(--label-colorlightprimary);
-    font-size: var(--default-bold-subheadline-font-size);
-    text-align: center;
-    letter-spacing: var(--default-bold-subheadline-letter-spacing);
-    line-height: var(--default-bold-subheadline-line-height);
-    white-space: nowrap;
-    font-style: var(--default-bold-subheadline-font-style);
-  }
-  
-  .iphone-component .home-indicator {
-    position: absolute;
-    width: 134px;
-    height: 5px;
-    top: 831px;
-    left: 128px;
-    background-color: var(--label-colorlightprimary);
-    border-radius: 100px;
-  }
-  
-  .iphone-component .rectangle-2 {
-    position: absolute;
-    width: 1429px;
-    height: 205px;
-    top: -131px;
-    left: -1429px;
-    background-color: #d9d9d9;
-  }
-  
-  .iphone-component .group {
+
+.navigation-bar {
     width: 390px;
-    height: 33px;
-    top: 47px;
-    position: absolute;
-    left: 0;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
   }
-  
-  .iphone-component .overlap-group {
-    position: relative;
-    width: 392px;
-    height: 33px;
-  }
-  
-  .iphone-component .group-2 {
-    width: 392px;
-    height: 32px;
-    top: 1px;
-    position: absolute;
-    left: 0;
-  }
-  
-  .iphone-component .text-wrapper-2 {
-    position: absolute;
-    top: 6px;
-    left: 169px;
-    font-family: "Kantumruy-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 20px;
-    white-space: nowrap;
-  }
-  
-  .iphone-component .line {
-    top: -1px;
-    position: absolute;
-    width: 390px;
-    height: 2px;
-    left: 0;
-    object-fit: cover;
-  }
-  
-  .iphone-component .img {
-    top: 30px;
-    position: absolute;
-    width: 390px;
-    height: 2px;
-    left: 0;
-    object-fit: cover;
-  }
-  
-  .iphone-component .user-light {
-    position: absolute;
-    width: 34px;
-    height: 28px;
-    top: 4px;
-    left: 348px;
-  }
-  
-  .iphone-component .image {
-    position: absolute;
-    width: 29px;
-    height: 33px;
-    top: 0;
-    left: 9px;
-    object-fit: cover;
-  }
-  
-  .iphone-component .rectangle-3 {
-    position: absolute;
-    width: 362px;
-    height: 273px;
-    top: 106px;
-    left: 14px;
-    object-fit: cover;
-  }
-  
-  .iphone-component .overlap {
-    position: absolute;
-    width: 362px;
-    height: 321px;
-    top: 475px;
-    left: 14px;
-  }
-  
-  .iphone-component .rectangle-4 {
-    position: absolute;
-    width: 362px;
-    height: 275px;
-    top: 46px;
-    left: 0;
-    object-fit: cover;
-  }
-  
-  .iphone-component .rectangle-5 {
-    position: absolute;
-    width: 362px;
-    height: 275px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
-  
-  .iphone-component .rectangle-6 {
-    position: absolute;
-    width: 358px;
-    height: 82px;
-    top: 239px;
-    left: 0;
-    background-color: #ffffff;
-    border: 2px solid;
-    border-color: #000000;
-  }
-  
-  .iphone-component .ellipse {
-    top: 246px;
-    left: 11px;
-    position: absolute;
-    width: 69px;
-    height: 68px;
-    object-fit: cover;
-  }
-  
-  .iphone-component .text-wrapper-3 {
-    position: absolute;
-    top: 244px;
-    left: 97px;
-    font-family: "Kantumruy-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 20px;
-    white-space: nowrap;
-  }
-  
-  .iphone-component .text-wrapper-4 {
-    position: absolute;
-    top: 268px;
-    left: 97px;
-    opacity: 0.5;
-    font-family: "Kantumruy-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 20px;
-    white-space: nowrap;
-  }
-  
-  .iphone-component .text-wrapper-5 {
-    position: absolute;
-    top: 288px;
-    left: 97px;
-    opacity: 0.5;
-    font-family: "Kantumruy-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 20px;
-    white-space: nowrap;
-  }
-  
-  .iphone-component .overlap-2 {
-    position: absolute;
-    width: 358px;
-    height: 82px;
-    top: 379px;
-    left: 14px;
-    background-color: #ffffff;
-    border: 2px solid;
-    border-color: #000000;
-  }
-  
-  .iphone-component .text-wrapper-6 {
-    position: absolute;
-    top: 27px;
-    left: 95px;
-    opacity: 0.5;
-    font-family: "Kantumruy-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 20px;
-    white-space: nowrap;
-  }
-  
-  .iphone-component .ellipse-2 {
-    top: 7px;
-    left: 9px;
-    position: absolute;
-    width: 69px;
-    height: 68px;
-    object-fit: cover;
-  }
-  
-  .iphone-component .text-wrapper-7 {
-    position: absolute;
-    top: 4px;
-    left: 95px;
-    font-family: "Kantumruy-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 20px;
-    white-space: nowrap;
-  }
-  
-  .iphone-component .text-wrapper-8 {
-    position: absolute;
-    top: 47px;
-    left: 95px;
-    opacity: 0.5;
-    font-family: "Kantumruy-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    line-height: 20px;
-    white-space: nowrap;
-  }
-  
+
+.navigation-bar-element {
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navigation-bar-image {
+  width: 40px;
+  height: 40px;
+}
+
+.search-bar {
+  margin: 0 auto;
+  width: 370px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.actual-search-bar {
+  font-family: "SFPro Text-Semibold", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+  width: 85%
+}
+
+.art-display {
+  width: 370px;
+  height: 100vh;
+  overflow-y: auto;
+  margin: 0 auto;
+}
+
+.art-block {
+  width: 366px;
+  border: 2pt solid black;
+  margin: 0 auto 10px;
+}
+
+.art-piece-block {
+  width: 366px;
+  height: auto;
+  margin-bottom: 2px solid black;
+}
+
+.art-caption-block {
+  width: 366px;
+  height: 80px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  align-items: center
+}
+
+.profile-picture {
+  width: 75px;
+  height: 75px;
+  vertical-align: middle;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 7px;
+}
+
+.artist-bio {
+  font-weight: 100px;
+  color: #A8A8A8;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}

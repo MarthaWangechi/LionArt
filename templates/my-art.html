@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'global.css')}}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'styleguide.css')}}" />
     <link rel="stylesheet" href="{{ url_for('static', filename = 'my-art-style.css')}}" />
   </head>
   <body>
-    <div class="iphone-component">
-      <div class="div">
-        <div class="home-indicator"></div>
-        <div class="rectangle-2"></div>
-        <div class="group">
-          <div class="overlap-group">
-            <div class="group-2">
-              <div class="text-wrapper-2">LionArt</div>
-              <img class="line" src="{{ url_for('static', filename='img/line-3.svg') }}" />
-              <img class="img" src="{{ url_for('static', filename='img/line-4.svg') }}" />
+    <div class="iphone-screen">
+        <div class="navigation-bar">
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/back-button.png') }}" alt="Back Button"></div>
+            <div class="navigation-bar-element">LionArt</div>
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png') }}" alt="Menu"></div>
+        </div>
+        <div class="art-display">
+            <div class="scrollable-area">
+                <a href = "{{ url_for('display_artist_profile')}}">
+                    <div class="art-block">
+                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                        <div class="art-caption-block">
+                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                            <div class="art-caption">
+                                <div class="title">
+                                    Motion In Manhattan
+                                </div>
+                                <div class="artist-bio">
+                                    John Smith <br> Street Photographer. CC '25
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href = "{{ url_for('display_artist_profile')}}">
+                    <div class="art-block">
+                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                        <div class="art-caption-block">
+                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                            <div class="art-caption">
+                                <div class="title">
+                                    Motion In Manhattan
+                                </div>
+                                <div class="artist-bio">
+                                    John Smith <br> Street Photographer. CC '25
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href = "{{ url_for('display_artist_profile')}}">
+                    <div class="art-block">
+                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                        <div class="art-caption-block">
+                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                            <div class="art-caption">
+                                <div class="title">
+                                    Motion In Manhattan
+                                </div>
+                                <div class="artist-bio">
+                                    John Smith <br> Street Photographer. CC '25
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href = "{{ url_for('display_artist_profile')}}">
+                    <div class="art-block">
+                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                        <div class="art-caption-block">
+                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                            <div class="art-caption">
+                                <div class="title">
+                                    Motion In Manhattan
+                                </div>
+                                <div class="artist-bio">
+                                    John Smith <br> Street Photographer. CC '25
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href = "{{ url_for('display_artist_profile')}}">
+                    <div class="art-block">
+                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+                        <div class="art-caption-block">
+                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+                            <div class="art-caption">
+                                <div class="title">
+                                    Motion In Manhattan
+                                </div>
+                                <div class="artist-bio">
+                                    John Smith <br> Street Photographer. CC '25
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <img class="user-light" src="{{ url_for('static', filename='img/profile-button.png') }}" />
-            <img class="image" src="{{ url_for('static', filename='img/back-button.png') }}" />
-          </div>
         </div>
-        <img class="rectangle-3" src="{{ url_for('static', filename='img/profile-pg-background.png') }}" />
-        <div class="overlap">
-          <img class="rectangle-4" src="{{ url_for('static', filename='img/rectangle-18.png') }}" />
-          <img class="rectangle-5" src="{{ url_for('static', filename='img/john_art.png') }}" />
-          <div class="rectangle-6"></div>
-          <img class="ellipse" src="{{ url_for('static', filename='img/john_pic.png') }}" />
-          <div class="text-wrapper-3">Motion in Manhattan</div>
-          <div class="text-wrapper-4">John Smith</div>
-          <div class="text-wrapper-5">Street photographer. CC ‘25.</div>
-        </div>
-        <div class="overlap-2">
-          <div class="text-wrapper-6">John Smith</div>
-          <img class="ellipse-2" src="{{ url_for('static', filename='img/john_pic.png') }}" />
-          <div class="text-wrapper-7">Constant Smile</div>
-          <div class="text-wrapper-8">Street photographer. CC ‘25.</div>
-        </div>
-      </div>
     </div>
   </body>
 </html>
