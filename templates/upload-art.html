@@ -47,7 +47,7 @@
   <body>
     <div class="iphone-screen">
         <div class="navigation-bar">
-            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename='img/back-button.png') }}" alt="Back Button"></div>
+          <div class="navigation-bar-element"><a href="#" onclick="window.history.back()"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/back-button.png') }}" alt="Back Button"></a></div>
             <div class="navigation-bar-element">LionArt</div>
             <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename='img/profile-button.png') }}" alt="Menu"></div>
         </div>

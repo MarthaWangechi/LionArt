@@ -1,49 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'global.css')}}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'styleguide.css')}}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'create-profile-style.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'create-profile-style.css')}}"  />
   </head>
   <body>
-    <div class="iphone-component">
-      <div class="div">
-        <div class="home-indicator"></div>
-        <div class="rectangle-2"></div>
-        <div class="group">
-          <div class="overlap-group">
-            <div class="group-2">
-              <div class="text-wrapper-2">LionArt</div>
-              <img class="line" src="{{ url_for('static', filename = 'img/line-3.svg')}}" />
-              <img class="img" src="{{ url_for('static', filename = 'img/line-4.svg')}}" />
+    <div class="iphone-screen">
+        <div class="navigation-bar">
+          <div class="navigation-bar-element"><a href="#" onclick="window.history.back()"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/back-button.png') }}" alt="Back Button"></a></div>
+            <div class="navigation-bar-element">LionArt</div>
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png')}}" alt="Menu"></div>
+        </div>
+        <button class="save-button" onclick="window.location.href = '{{ url_for('display_artist_profile') }}';">Save Profile</button>
+        <div class="profile-editor">
+            <img class="profile-pic" src="{{ url_for('static', filename = 'img/john_pic.png')}}">
+            <div class="instructions">Edit your profile photo</div>
+            <div class="general-info">
+                <input class="general-info" type="text" placeholder="Profile name">
+                <input class="general-info" type="text" placeholder="School">
+                <input class="general-info" type="text" placeholder="Grad year">
+                <input class="general-info" type="text" placeholder="Major">
             </div>
-            <img class="user-light" src="{{ url_for('static', filename = 'img/profile-button.png')}}" />
-            <img class="image" src="{{ url_for('static', filename = 'img/back-button.png')}}" />
-          </div>
+            <div class="description">
+                <input id="description-input" type="text" placeholder="Type your artist bio here">
+            </div>
+            <div id="contact-info" class="instructions">Edit contact info</div>
+            <div class="general-info">
+                <div class="contact-method">
+                    <img src="{{ url_for('static', filename = 'img/instagram-logo.png')}}"> 
+                    <input class="general-info" type="text" placeholder="Instagram link">
+                </div>
+                <div class="contact-method">
+                    <img src="{{ url_for('static', filename = 'img/website-link.png')}}"> 
+                    <input class="general-info" type="text" placeholder="Portfolio link">
+                </div>
+            </div>
         </div>
-        <div class="overlap"><div class="text-wrapper-3"><button onclick="window.location.href = '{{ url_for('display_artist_profile') }}';">Save profile</button></div></div>
-        <img class="ellipse" src="{{ url_for('static', filename = 'img/john_pic.png')}}" />
-        <div class="text-wrapper-4">Change/edit profile photo</div>
-        <div class="text-wrapper-5"><input type="text" class="form-control" value="Profile name"></div>
-        <!--<input type="text" class="form-control" value="Password">-->
-        <img class="line-2" src="{{ url_for('static', filename = 'img/line-6.svg')}}" />
-        <div class="text-wrapper-6"><input type="text" class="form-control" value="Major"></div>
-        <div class="overlap-2">
-          <div class="text-wrapper-8"><input value="Type artist bio here" style="width: 300px; height: 80px;"></div>
-        </div>
-        <img class="line-3" src="{{ url_for('static', filename = 'img/line-9.svg')}}" />
-        <div class="text-wrapper-9"><input type="text" class="form-control" value="Instagram link" style="width: 240px"></div>
-        <img class="line-4" src="{{ url_for('static', filename = 'img/line-10.svg')}}" />
-        <div class="text-wrapper-10"><input type="text" class="form-control" value="Portfolio link" style="width: 240px"></div>
-        <img class="line-5" src="{{ url_for('static', filename = 'img/line-11.svg')}}" />
-        <div class="text-wrapper-11"><input type="text" class="form-control" value="Grad year"></div>
-        <img class="line-6" src="{{ url_for('static', filename = 'img/line-8.svg')}}" />
-        <div class="text-wrapper-12"><input type="text" class="form-control" value="School"></div>
-        <img class="line-7" src="{{ url_for('static', filename = 'img/line-7.svg')}}" />
-        <div class="text-wrapper-13">Edit contact info:</div>
-        <img class="image-2" src="{{ url_for('static', filename = 'img/instagram-logo.png')}}" />
-        <img class="image-3" src="{{ url_for('static', filename = 'img/website-link.png')}}" />
-      </div>
     </div>
   </body>
 </html>

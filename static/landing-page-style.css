@@ -68,7 +68,8 @@ html {
   font-weight: 400;
   line-height: 20px;
   font-style: normal;
-  width: 85%
+  width: 85%;
+  border: 2px solid white;
 }
 
 .filter-list {
