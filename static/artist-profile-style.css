@@ -1,4 +1,4 @@
-.iphone-component {
+/* .iphone-component {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -335,4 +335,148 @@
     position: absolute;
     object-fit: cover;
   }
-  
+   */
+
+   html {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+  }
+
+.iphone-screen {
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: #d9d9d9;
+    width: 390px;
+    height: 844px;
+    position: relative;
+  }
+
+.navigation-bar {
+    width: 390px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 15px; */
+  }
+
+.navigation-bar-element {
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navigation-bar-image {
+  width: 40px;
+  height: 40px;
+}
+
+.artist-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-bio-block {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.spotlight-image img {
+    width: 390px;
+    height: auto;
+    border: none;
+}
+
+.pic-and-name {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.artist-name {
+    margin-left: 20px;
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 40px;
+    font-style: normal;
+    width: 50px;
+    overflow-wrap: normal;
+}
+
+.pic-and-name img {
+    width: 120px;
+    height: 120px;
+}
+
+.artist-bio {
+    margin-top: 55px;
+    text-align: center;
+}
+
+#about {
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+.long-intro {
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: #A8A8A8;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.discover-link {
+    margin-top: 350px;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.external-links {
+    height: 60px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.external-links img {
+    width: 60px;
+    height: 60px;
+}
+
+a {
+  color:black;
+}
