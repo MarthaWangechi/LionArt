@@ -1,4 +1,4 @@
-.iphone-component {
+/* .iphone-component {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -368,4 +368,144 @@
     box-shadow: none;
     border-radius: 0;
   }
-  
+   */
+
+   html {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+  }
+
+p {
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+.iphone-screen {
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: #d9d9d9;
+    width: 390px;
+    height: 844px;
+    position: relative;
+  }
+
+.navigation-bar {
+    width: 390px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+.navigation-bar-element {
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navigation-bar-image {
+  width: 40px;
+  height: 40px;
+}
+
+.upload-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-art {
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 20px;
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.upload-image{
+    width: 370px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.title {
+    margin-top: 25px;
+}
+
+p {
+    width: 370px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title input {
+    width: 370px;
+    color: #A8A8A8A8;
+    border: 2px solid black;
+    margin-bottom: 25px;
+}
+
+.tag {
+    border: 2px solid black;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tag-list {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.add-tag {
+    border: 2pt solid black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 25px;
+}
+
+#description-input {
+    border: 2pt solid black;
+    color: #A8A8A8A8;
+    background-color: white;
+    width: 370px;
+    height: 100px;
+}
+
+#description-input::placeholder {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#upload-button {
+  margin-top: 35px;
+  border: 2pt solid black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+}

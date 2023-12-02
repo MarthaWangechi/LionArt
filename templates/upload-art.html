@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'global.css')}}" />
@@ -35,6 +35,45 @@
         <div class="overlap-3"><div class="text-wrapper-11"><button class="btn btn-outline-dark" style="background-color: white; border-color: black;">+ Add tag</button></div></div>
         <button class="button-class" id="Enter" type="button" onclick="window.location.href = '{{ url_for('display_artist_profile') }}';" class="button">Upload</button>
       </div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet"  href="{{ url_for('static', filename = 'upload-art-style.css')}}" />
+  </head>
+  <body>
+    <div class="iphone-screen">
+        <div class="navigation-bar">
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename='img/back-button.png') }}" alt="Back Button"></div>
+            <div class="navigation-bar-element">LionArt</div>
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename='img/profile-button.png') }}" alt="Menu"></div>
+        </div>
+        <div class="upload-screen">
+            <div class="upload-art">
+                Upload Art
+            </div>
+            <img class="upload-image" src="{{ url_for('static', filename='img/john_art.png') }}">
+            <div class="title">
+                <p>Title</p>
+                <input id="username" type="text" placeholder="Art piece title">
+            </div>
+            <div class="tags">
+                <p>Tags</p>
+                <div class="tag-list">
+                    <div class="tag">Photography</div>
+                    <div class="tag">Experimental</div>
+                </div>
+                <button class="add-tag">+ Add tag</button>
+            </div>
+            <div class="description">
+                <p>Description</p>
+                <input id="description-input" type="text" placeholder="Description of art piece">
+            </div>
+            <button id="upload-button" onclick="window.location.href = '{{ url_for('display_my_art') }}';">Upload</button>
+        </div>
     </div>
   </body>
 </html>
