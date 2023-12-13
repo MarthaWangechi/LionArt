@@ -6,14 +6,11 @@
   <body>
     <div class="iphone-screen">
         <div class="create-account-content">
-            <img class="logo" src="{{ url_for('static', filename = 'img/columbia-logo.png')}}">
-            <div class="title">Lion Art</div>
+            <img class="logo" src="{{ url_for('static', filename = 'img/logo.png')}}">
             <div class="text">
-                <p>Username</p>
                 <input id="username" type="text" placeholder="Username">
             </div>
-            <div class="text">
-                <p>Password</p>            
+            <div class="text">           
                 <input id="password" type="text" placeholder="Password">
             </div>
             <button id="loginButton" onclick="window.location.href = '{{ url_for('display_landing_page') }}';">Create Account</button>

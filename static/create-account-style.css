@@ -35,8 +35,9 @@ p {
 }
 
 .logo {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 223px;
+  flex-shrink: 0;
   border-radius: 50%;
   margin-top: 200px;
 }
@@ -60,27 +61,46 @@ p {
 
 #username {
   margin-bottom: 20px;
-  width: 275px;
-  border: 2pt solid black;
-
+  width: 305px;
+  height: 30px;
+  border: 0.1px solid #e7dede;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding-left: 5px;
 }
 
 #password {
   margin-bottom: 20px;
-  width: 275px;
-  border: 2pt solid black;
+  width: 305px;
+  height: 30px;
+  flex-shrink: 0;
+  border: 0.1px solid #e7dede;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding-left: 5px;
 }
 
 #loginButton {
-  border: 2pt solid black;
-  background-color: white;
+  width: 125px;
+  height: 41px;
+  flex-shrink: 0;
+  background-color: #0273DB;
+  stroke-width: 0.1px;
+  border-radius: 10px;
+  color: white;
 }
 
 #have-account {
   padding-top: 35px;
+  color: black;
 }
 
 .login-help-text {
   text-decoration: underline;
   padding-bottom: 15px;
+  font-family: Kantumruy;
+  font-size: 15px;
+  font-style: normal;
 }
