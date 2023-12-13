@@ -90,6 +90,7 @@ p {
   stroke-width: 0.1px;
   border-radius: 10px;
   color: white;
+  border: 0px;
 }
 
 #have-account {
