@@ -10,44 +10,6 @@
             <div class="navigation-bar-element">LionArt</div>
             <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png') }}" alt="Menu"></div>
         </div>
-        <div class="search-bar">
-            <img class="search-icon" src="{{ url_for('static', filename = 'img/search.png') }}" alt="Search Icon">
-            <input type="text" class="actual-search-bar" placeholder="Search">
-        </div>
-        <div class="filter-list">
-            <div class="filter-item">
-                <img class="filter-image" src="{{ url_for('static', filename = 'img/painting.png') }}"> 
-                <div class="filter-text">painting</div>
-            </div>
-            <div class="filter-item">
-                <img class="filter-image" src="{{ url_for('static', filename = 'img/sculpture.png') }}"> 
-                <div class="filter-text">sculpture</div>
-            </div>
-            <div class="filter-item">
-                <img class="filter-image" src="{{ url_for('static', filename = 'img/photography.png') }}"> 
-                <div class="filter-text">photography</div>
-            </div>
-            <div class="filter-item">
-                <img class="filter-image" src="{{ url_for('static', filename = 'img/ceramics.png') }}"> 
-                <div class="filter-text">ceramics</div>
-            </div>
-            <div class="filter-item">
-                <img class="filter-image" src="{{ url_for('static', filename = 'img/street_art.png') }}"> 
-                <div class="filter-text">street art</div>
-            </div>
-            <div class="filter-item">
-                <img class="filter-image" src="{{ url_for('static', filename = 'img/photography.png') }}"> 
-                <div class="filter-text">photography</div>
-            </div>
-            <div class="filter-item">
-                <img class="filter-image" src="{{ url_for('static', filename = 'img/painting.png') }}"> 
-                <div class="filter-text">painting</div>
-            </div>
-            <div class="filter-item">
-                <img class="filter-image" src="{{ url_for('static', filename = 'img/sculpture.png') }}"> 
-                <div class="filter-text">sculpture</div>
-            </div>
-        </div>
         <div class="art-display">
             <div class="scrollable-area">
                 <a href = "{{ url_for('display_artist_profile')}}">
@@ -60,7 +22,7 @@
                                     Motion In Manhattan
                                 </div>
                                 <div class="artist-bio">
-                                    John Smith <br> Street Photographer. CC '25
+                                    John Smith 
                                 </div>
                             </div>
                         </div>
@@ -76,7 +38,7 @@
                                     Motion In Manhattan
                                 </div>
                                 <div class="artist-bio">
-                                    John Smith <br> Street Photographer. CC '25
+                                    John Smith
                                 </div>
                             </div>
                         </div>
@@ -92,7 +54,7 @@
                                     Motion In Manhattan
                                 </div>
                                 <div class="artist-bio">
-                                    John Smith <br> Street Photographer. CC '25
+                                    John Smith
                                 </div>
                             </div>
                         </div>
@@ -108,14 +70,24 @@
                                     Motion In Manhattan
                                 </div>
                                 <div class="artist-bio">
-                                    John Smith <br> Street Photographer. CC '25
+                                    John Smith
                                 </div>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
+            
         </div>
+        <!--
+        <div class="navigation-bar">
+            <div class="navigation-bar-element"><a href="#" onclick="window.history.back()"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/back-button.png') }}" alt="Back Button"></a></div>
+            <div class="navigation-bar-element">LionArt</div>
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png') }}" alt="Menu"></div>
+        </div> -->
+    </div>
+    <div>
+        <div class="bottom-navbar"></div>
     </div>
   </body>
 </html>
