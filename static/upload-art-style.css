@@ -63,53 +63,77 @@ p {
     font-size: 25px;
     font-weight: bold;
     line-height: 20px;
-
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
 .upload-image{
-    width: 370px;
-    height: auto;
-    border: 2px solid black;
+    margin-top: 90px;
+    width: 75px;
+    height: 74px;
+    border: 0px rgb(255, 255, 255);
 }
 
 .title {
-    margin-top: 25px;
+    margin-top: 75px;
+    margin-left: 20px;
+    width: 350px;
 }
 
 p {
     width: 370px;
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
+    margin-left: 40px;
 }
 
-.title input {
-    width: 370px;
+.title-text {
+    width: 100%;
     color: #A8A8A8A8;
-    border: 2px solid black;
+    border-bottom: 1px solid black;
+    border-top: 0px black;
+    border-left: 0px black;
+    border-right: 0px black;
     margin-bottom: 25px;
 }
 
 .tag {
-    border: 2px solid black;
-    width: 100px;
-    height: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    width: 152px;
+    height: 33px;
     margin-bottom: 10px;
     text-align: center;
     margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .tag-list {
     display: flex; 
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .add-tag {
-    border: 2pt solid black;
+    width: 152px;
+    height: 33px;
+    border: 2pt solid rgb(255, 255, 255);
     background-color: white;
-    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.add-tag-div {
+    margin-top: 30px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .description {
@@ -117,11 +141,12 @@ p {
 }
 
 #description-input {
-    border: 2pt solid black;
+    border: 1pt solid rgb(177, 174, 174);
     color: #A8A8A8A8;
     background-color: white;
-    width: 370px;
+    width: 350px;
     height: 100px;
+    margin-left: 35px;
 }
 
 #description-input::placeholder {
@@ -131,9 +156,13 @@ p {
 }
 
 #upload-button {
+  height: 41px;
+  width: 125px;
   margin-top: 35px;
-  border: 2pt solid black;
-  background-color: white;
-  font-weight: bold;
-  font-size: 20px;
+  border: 0pt solid rgb(255, 255, 255);
+  background-color: #0273DB;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
