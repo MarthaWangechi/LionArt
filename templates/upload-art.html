@@ -14,10 +14,9 @@
             <div class="upload-art">
                 Upload Art
             </div>
-            <img class="upload-image" src="{{ url_for('static', filename='img/john_art.png') }}">
+            <img class="upload-image" src="{{ url_for('static', filename='img/plus_sign.png') }}">
             <div class="title">
-                <p>Title</p>
-                <input id="username" type="text" placeholder="Art piece title">
+                <input class="title-text" type="text" placeholder="Title">
             </div>
             <div class="tags">
                 <p>Tags</p>
@@ -25,7 +24,9 @@
                     <div class="tag">Photography</div>
                     <div class="tag">Experimental</div>
                 </div>
-                <button class="add-tag">+ Add tag</button>
+                <div class="add-tag-div">
+                  <button class="add-tag">+ Add tag</button>
+                </div>
             </div>
             <div class="description">
                 <p>Description</p>

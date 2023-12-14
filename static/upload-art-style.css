@@ -63,53 +63,77 @@ p {
     font-size: 25px;
     font-weight: bold;
     line-height: 20px;
-
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
 .upload-image{
-    width: 370px;
-    height: auto;
-    border: 2px solid black;
+    width: 75px;
+    height: 74px;
+    border: 0px solid rgb(255, 255, 255);
+    margin-top: 75px;
 }
 
 .title {
-    margin-top: 25px;
+    margin-top: 85px;
 }
 
 p {
     width: 370px;
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.title input {
+.title-text {
     width: 370px;
     color: #A8A8A8A8;
-    border: 2px solid black;
+    border-top: 0px white; 
+    border-right: 0px white; 
+    border-left: 0px white; 
+    border-bottom: 1px solid black;
     margin-bottom: 25px;
 }
 
+.tags {
+    margin-top: 45px;
+}
+
 .tag {
-    border: 2px solid black;
-    width: 100px;
-    height: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    width: 152px;
+    height: 33px;
     margin-bottom: 10px;
     text-align: center;
     margin-right: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .tag-list {
     display: flex; 
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
+.add-tag-div {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 .add-tag {
-    border: 2pt solid black;
+    width: 152px;
+    height: 33px;
+    border: 2pt solid rgb(255, 255, 255);
     background-color: white;
-    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .description {
@@ -117,7 +141,7 @@ p {
 }
 
 #description-input {
-    border: 2pt solid black;
+    border: 1pt solid rgb(191, 187, 187);
     color: #A8A8A8A8;
     background-color: white;
     width: 370px;
@@ -131,9 +155,12 @@ p {
 }
 
 #upload-button {
-  margin-top: 35px;
-  border: 2pt solid black;
-  background-color: white;
-  font-weight: bold;
-  font-size: 20px;
+    width: 125px;
+    height: 41px;
+    margin-top: 35px;
+    border: 2pt solid rgb(255, 255, 255);
+    background-color: #0273DB;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
 }
