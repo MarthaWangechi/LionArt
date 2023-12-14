@@ -10,7 +10,7 @@
             <div class="navigation-bar-element">LionArt</div>
             <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png')}}" alt="Menu"></div>
         </div>
-        <button class="save-button" onclick="window.location.href = '{{ url_for('display_artist_profile') }}';">Save Profile</button>
+        
         <div class="profile-editor">
             <img class="profile-pic" src="{{ url_for('static', filename = 'img/john_pic.png')}}">
             <div class="instructions">Edit your profile photo</div>
@@ -33,8 +33,13 @@
                     <img src="{{ url_for('static', filename = 'img/website-link.png')}}"> 
                     <input class="general-info" type="text" placeholder="Portfolio link">
                 </div>
-            </div>
+            </div>       
+          </div>
+          <div class="save-button-div">
+            <button class="save-button" onclick="window.location.href = '{{ url_for('display_artist_profile') }}';">Save Profile</button>
+          </div>
         </div>
+        
     </div>
   </body>
 </html>

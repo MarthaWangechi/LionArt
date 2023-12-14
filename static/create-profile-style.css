@@ -46,13 +46,24 @@ html {
 }
 
 .save-button {
-    border: 2pt solid black;
-    background-color: white;
-    font-weight: bold;
+    border: 0px;
+    background-color: #0273DB;
     padding-left: 5px;
     padding-right: 5px;
     position: absolute;
-    right: 3%;
+    color: white;
+    width: 125px;
+    height: 41px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.save-button-div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
 
 .profile-editor {
@@ -91,20 +102,23 @@ html {
     border-top: 2px solid white;
     border-left: 2px solid white;
     border-right: 2px solid white;;
-    border-bottom: 2px solid black;
+    border-bottom: 0.5px solid rgb(133, 128, 128);
 }
 
 .description {
     margin-top: 30px;
+    padding: 10px;
 }
 
 #description-input {
-    border: 2pt solid black;
+    border: 0.5pt solid rgb(184, 181, 181);
     color: #A8A8A8A8;
     background-color: white;
     width: 300px;
     height: 100px;
     margin-bottom: 30px;
+    border-radius: 10px;
+   
 }
 
 #description-input::placeholder {
