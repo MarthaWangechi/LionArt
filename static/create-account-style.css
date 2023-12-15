@@ -105,3 +105,8 @@ p {
   font-size: 15px;
   font-style: normal;
 }
+
+#error-message {
+  margin-top: 20 px;
+  color: red;
+}
