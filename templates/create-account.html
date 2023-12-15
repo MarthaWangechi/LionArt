@@ -2,6 +2,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'create-account-style.css')}}" />
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'create-user.js') }}"></script>
   </head>
   <body>
     <div class="iphone-screen">
@@ -13,8 +16,9 @@
             <div class="text">           
                 <input id="password" type="text" placeholder="Password">
             </div>
-            <button id="loginButton" onclick="window.location.href = '{{ url_for('display_landing_page') }}';">Create Account</button>
+            <button id="loginButton">Create Account</button>
             <a id="have-account" class="login-help-text" href = "{{ url_for('display_login_page')}}">Have an account? Login here.</a>
+            <p id="error-message"></p>
         </div>
     </div>
   </body>
