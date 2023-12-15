@@ -68,16 +68,14 @@ p {
 }
 
 .upload-image{
-    margin-top: 90px;
     width: 75px;
     height: 74px;
-    border: 0px rgb(255, 255, 255);
+    border: 0px solid rgb(255, 255, 255);
+    margin-top: 75px;
 }
 
 .title {
-    margin-top: 75px;
-    margin-left: 20px;
-    width: 350px;
+    margin-top: 85px;
 }
 
 p {
@@ -89,13 +87,17 @@ p {
 }
 
 .title-text {
-    width: 100%;
+    width: 370px;
     color: #A8A8A8A8;
+    border-top: 0px white; 
+    border-right: 0px white; 
+    border-left: 0px white; 
     border-bottom: 1px solid black;
-    border-top: 0px black;
-    border-left: 0px black;
-    border-right: 0px black;
     margin-bottom: 25px;
+}
+
+.tags {
+    margin-top: 45px;
 }
 
 .tag {
@@ -105,11 +107,12 @@ p {
     margin-bottom: 10px;
     text-align: center;
     margin-right: 10px;
-    border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex; 
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
 .tag-list {
@@ -119,6 +122,12 @@ p {
     justify-content: center;
 }
 
+.add-tag-div {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 .add-tag {
     width: 152px;
     height: 33px;
