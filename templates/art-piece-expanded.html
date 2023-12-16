@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename = 'art-piece-expanded-style.css')}}" /> -->
+    <link rel="stylesheet" href="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/art-piece-expanded-style.css" />
+  </head>
+  <body>
+    <div class="iphone-screen">
+        <div class="navigation-bar">
+            <div class="navigation-bar-element"><a href="#" onclick="window.history.back()"><img class="navigation-bar-image" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/back-button.png" alt="Back Button"></a></div>
+            <div class="navigation-bar-element">LionArt</div>
+            <div class="navigation-bar-element"><img class="navigation-bar-image" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/profile-button.png" alt="Menu"></div>
+        </div>
+        <div class="art-display">
+            <!--<div class="scrollable-area">-->
+                <a href = "{{ url_for('display_artist_profile')}}">
+                    <div class="art-block">
+                        <img class="art-piece-block" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/john_art.png">
+                        <div class="art-caption-block">
+                            <img class="profile-picture" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/john_pic.png">
+                            <div class="art-caption">
+                                <div class="title">
+                                    Motion In Manhattan
+                                </div>
+                                <div class="artist-bio">
+                                    John Smith 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href = "{{ url_for('display_artist_profile')}}">
+                    <div class="art-block">
+                        <img class="art-piece-block" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/art-piece-2.png">
+                        <div class="art-caption-block">
+                            <img class="profile-picture" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/john_pic.png">
+                            <div class="art-caption">
+                                <div class="title">
+                                    Motion In Manhattan
+                                </div>
+                                <div class="artist-bio">
+                                    John Smith
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="artist-bio-2">
+                    <div class="navigation-bar-2">
+                        <div class="navigation-bar-element"><a href="#" onclick="window.history.back()"><img class="navigation-bar-image" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/back-button.png" alt="Back Button"></a></div>
+                        <div class="navigation-bar-element-2">Motion in Manhattan</div>
+                    </div>
+                    <div class="artist-name-box">
+                        <div class="artist-name">By John Smith</div>
+                    </div>
+                    <img class="art-piece-block-2" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/john_art.png">
+                    <div class="long-intro">
+                        Within New York's vibrant streets, the subway is a living canvas, where every moment tells a story. Ordinary scenes transform into extraordinary glimpses of city life. Each train's roar adds depth, and graffiti-covered walls echo the city's soul—a blend of history and the present. The turnstile's click is more than a sound; it's the start of an underground symphony, leading passengers on an unscripted journey through the heart of the city.
+                    </div>
+                    <div class="tag-list">
+                        <div class="tag">Photography</div>
+                        <div class="tag">Experimental</div>
+                    </div>
+                    <div>
+                        <img class="profile-picture-2" src="/Users/marthanjuguna/Documents/FALL-2023/ui/LionArt/static/img/john_pic.png">
+                    </div>
+                </div>
+            <!--</div>-->
+            
+        </div>
+    </div>
+  </body>
+</html>
