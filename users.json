@@ -1,14 +1,80 @@
 {
     "testuser1": {
         "username": "testuser1",
-        "password": "123"
-    },
-    "testuser2": {
-        "username": "testuser2",
-        "password": "123"
+        "password": "123",
+        "profile-photo": "none",
+        "profile-name": "test user",
+        "school": "test school",
+        "grad-year": "test grad year",
+        "major": "test major",
+        "artist-bio": "test bio test bio test bio",
+        "instagram-link": "testinstagram.com",
+        "portfolio-link": "testportfolio.com",
+        "posts": []
     },
     "shelbyw": {
         "username": "shelbyw",
-        "password": "123"
+        "password": "123",
+        "profile-photo": "none",
+        "profile-name": "none",
+        "school": "none",
+        "grad-year": "none",
+        "major": "none",
+        "artist-bio": "none",
+        "instagram-link": "none",
+        "portfolio-link": "none",
+        "posts": []
+    },
+    "shelby": {
+        "artist-bio": "none",
+        "grad-year": "none",
+        "instagram-link": "none",
+        "major": "none",
+        "password": "123",
+        "portfolio-link": "none",
+        "posts": [],
+        "profile-name": "SANDY",
+        "profile-photo": "none",
+        "school": "none",
+        "username": "shelby"
+    },
+    "BobInWonderland": {
+        "artist-bio": "none",
+        "grad-year": "none",
+        "instagram-link": "none",
+        "major": "none",
+        "password": "123",
+        "portfolio-link": "none",
+        "posts": [],
+        "profile-name": "none",
+        "profile-photo": "BobInWonderland.jpg",
+        "school": "none",
+        "username": "BobInWonderland"
+    },
+    "she": {
+        "artist-bio": "none",
+        "grad-year": "none",
+        "instagram-link": "none",
+        "major": "none",
+        "password": "123",
+        "portfolio-link": "none",
+        "posts": [],
+        "profile-name": "none",
+        "profile-photo": "she.jpg",
+        "school": "none",
+        "username": "she"
+    },
+    "sh": {
+        "artist-bio": "none",
+        "grad-year": "none",
+        "instagram-link": "none",
+        "major": "none",
+        "password": "123",
+        "portfolio-link": "none",
+        "posts": [],
+        "profile-name": "none",
+        "profile-photo": "sh.jpg",
+        "school": "none",
+        "username": "sh"
     }
 }

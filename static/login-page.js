@@ -13,6 +13,7 @@ function login(username, password) {
         success: function(result) {
             console.log("Success! User Logged in!", userData);
             $('#error-message').text("");
+            // sessionStorage.setItem('user', JSON.stringify(result['user']));
             window.location.href = '/LandingPage'; 
         },
         error: function(xhr, status, error) {
