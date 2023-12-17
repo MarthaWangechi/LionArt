@@ -4,6 +4,7 @@ from flask import Response, request, jsonify
 import json
 from os import path 
 import os
+import mimetypes
 
 app = Flask(__name__)
 app.secret_key = 'secret_key' 
@@ -69,9 +70,11 @@ def display_create_profile():
         if 'profilePic' in request.files:
             print("SHELBY PROFILE PHOTO UPLOADED IN SERVER.PY")
             file = request.files['profilePic']
+            fileExtension = mimetypes.guess_extension(file.mimetype)
+            print("fileExtension", fileExtension)
             print("SHELBY FILENAME", file.filename)
-            file.save(os.path.join('./static/img/user-profile-pics/', user_data["username"] + ".jpg"))
-            user_data["profile-photo"] = user_data["username"] + ".jpg"
+            file.save(os.path.join('./static/img/user-profile-pics/', user_data["username"] + fileExtension))
+            user_data["profile-photo"] = user_data["username"] + fileExtension
 
         print("user_data", user_data)
 

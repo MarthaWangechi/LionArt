@@ -2,6 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'artist-profile-style.css')}}" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'artist-profile.js') }}"></script>
+    <script>
+        var user = {{user|tojson}};
+      </script>
   </head>
   <body>
     <div class="iphone-screen">
@@ -17,15 +22,15 @@
                 </div>
                 <div class="artist-bio-block">
                     <div class="pic-and-name">
-                        <img src="{{ url_for('static', filename = 'img/john_pic.png')}}">
-                        <div class="artist-name">
+                        <img id="artist-profile-pic" src="{{ url_for('static', filename = 'img/john_pic.png')}}">
+                        <div id="artist-name" class="artist-name">
                             John Smith
                         </div>
                     </div>
                     <div class="artist-bio">
                         <div class="long-intro">
-                            Street photographer. CC'25. <br><br>
-                            I'm John Smith, a Columbia University student and NYC street photographer. Raised in the heart of the city, I fuse my studies in Journalism and Visual Arts with my passion for capturing candid moments on the bustling streets.
+                            <span id="major-name-id" class="major">Artist</span>. <span id="school-name-id">Columbia</span> <span id="grad-year-name-id">202?</span>. <br><br>
+                            <span id="artist-bio">A mystery artist!</span>
                         </div>
                     </div>
                 </div>
