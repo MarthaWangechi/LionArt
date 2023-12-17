@@ -29,7 +29,7 @@ function renderCurrentUserInfo() {
 
     var bio = document.getElementById("description-input")
     if (user["artist-bio"] != "none") {
-        bio.value = user["bio"]
+        bio.value = user["artist-bio"]
     }
 
     var insta = document.getElementById("insta")
@@ -53,7 +53,7 @@ function updateUserInfo() {
     updatedUserData["school"] = document.getElementById("school-name-id").value;
     updatedUserData["grad-year"] = document.getElementById("grad-year-name-id").value;
     updatedUserData["major"] = document.getElementById("major-name-id").value;
-    updatedUserData["bio"] = document.getElementById("description-input").value;
+    updatedUserData["artist-bio"] = document.getElementById("description-input").value;
     updatedUserData["instagram-link"] = document.getElementById("insta").value;
     updatedUserData["portfolio-link"] = document.getElementById("portfolio").value;
 
@@ -88,7 +88,10 @@ function updateUserInfo() {
                 sessionStorage.setItem('user', JSON.stringify(result.user));
             });
             console.log("SHELBY", JSON.parse(sessionStorage.getItem('user')))
-            window.location.href = '/ArtistProfile';
+            setTimeout(function() {
+                // Redirect to the next page after 2000 milliseconds (2 seconds)
+                window.location.href = '/ArtistProfile';
+            }, 5000);
         },
         error: function(request, status, error) {
             console.log("Error");

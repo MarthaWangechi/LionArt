@@ -25,56 +25,17 @@
         "portfolio-link": "none",
         "posts": []
     },
-    "shelby": {
-        "artist-bio": "none",
-        "grad-year": "none",
+    "shel": {
+        "artist-bio": "I love art",
+        "grad-year": "2024",
         "instagram-link": "none",
-        "major": "none",
+        "major": "Computer Science",
         "password": "123",
         "portfolio-link": "none",
         "posts": [],
-        "profile-name": "SANDY",
-        "profile-photo": "none",
-        "school": "none",
-        "username": "shelby"
-    },
-    "BobInWonderland": {
-        "artist-bio": "none",
-        "grad-year": "none",
-        "instagram-link": "none",
-        "major": "none",
-        "password": "123",
-        "portfolio-link": "none",
-        "posts": [],
-        "profile-name": "none",
-        "profile-photo": "BobInWonderland.jpg",
-        "school": "none",
-        "username": "BobInWonderland"
-    },
-    "she": {
-        "artist-bio": "none",
-        "grad-year": "none",
-        "instagram-link": "none",
-        "major": "none",
-        "password": "123",
-        "portfolio-link": "none",
-        "posts": [],
-        "profile-name": "none",
-        "profile-photo": "she.jpg",
-        "school": "none",
-        "username": "she"
-    },
-    "sh": {
-        "artist-bio": "none",
-        "grad-year": "none",
-        "instagram-link": "none",
-        "major": "none",
-        "password": "123",
-        "portfolio-link": "none",
-        "posts": [],
-        "profile-name": "none",
-        "profile-photo": "sh.jpg",
-        "school": "none",
-        "username": "sh"
+        "profile-name": "Shelby Wengreen",
+        "profile-photo": "shel.jpg",
+        "school": "SEAS",
+        "username": "shel"
     }
 }
