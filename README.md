@@ -1,6 +1,8 @@
 # LionArt
 To run our website locally: python server.py
 
+Please note that any uploaded images must have the file extension in their name!
+
 We referenced the lecture notes from the flask lecture to write server.py. We also referenced the lecture notes from the javascript/html
 lecture. We also consulted stack overflow when we were having trouble linking out html views together on our local server. We referenced
 stack overflow for other small html issues as well.

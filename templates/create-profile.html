@@ -2,6 +2,13 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'create-profile-style.css')}}"  />
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'create-profile.js') }}"></script>
+    <script>
+      var user = {{user|tojson}};
+    </script>
+    <div id="userData" data-username="{{ username }}"></div>
   </head>
   <body>
     <div class="iphone-screen">
@@ -12,13 +19,16 @@
         </div>
         
         <div class="profile-editor">
-            <img class="profile-pic" src="{{ url_for('static', filename = 'img/john_pic.png')}}">
-            <div class="instructions">Edit your profile photo</div>
+            <div class="profile-pic-editor">
+              <img id="profile-pic-id" class="profile-pic" src="{{ url_for('static', filename = 'img/user-profile-pics/default.jpg')}}">
+              <label for="photoInput" class="instructions">Upload your profile photo</label>
+              <input type="file" id="photoInput" accept="image/*">
+            </div>
             <div class="general-info">
-                <input class="general-info" type="text" placeholder="Profile name">
-                <input class="general-info" type="text" placeholder="School">
-                <input class="general-info" type="text" placeholder="Grad year">
-                <input class="general-info" type="text" placeholder="Major">
+                <input id="profile-name-id" class="general-info" type="text" placeholder="Profile name">
+                <input id="school-name-id" class="general-info" type="text" placeholder="School">
+                <input id="grad-year-name-id" class="general-info" type="text" placeholder="Grad year">
+                <input id="major-name-id" class="general-info" type="text" placeholder="Major">
             </div>
             <div class="description">
                 <input id="description-input" type="text" placeholder="Type your artist bio here">
@@ -27,16 +37,16 @@
             <div class="general-info">
                 <div class="contact-method">
                     <img src="{{ url_for('static', filename = 'img/instagram-logo.png')}}"> 
-                    <input class="general-info" type="text" placeholder="Instagram link">
+                    <input id="insta" class="general-info" type="text" placeholder="Instagram link">
                 </div>
                 <div class="contact-method">
                     <img src="{{ url_for('static', filename = 'img/website-link.png')}}"> 
-                    <input class="general-info" type="text" placeholder="Portfolio link">
+                    <input id="portfolio" class="general-info" type="text" placeholder="Portfolio link">
                 </div>
             </div>       
           </div>
           <div class="save-button-div">
-            <button class="save-button" onclick="window.location.href = '{{ url_for('display_artist_profile') }}';">Save Profile</button>
+            <button id="save-button-id" class="save-button" onclick="window.location.href = '{{ url_for('display_artist_profile') }}';">Save Profile</button>
           </div>
         </div>
         

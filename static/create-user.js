@@ -13,9 +13,10 @@ function createUser(username, password) {
         dataType : "json",
         contentType: "application/json; charset=utf-8",
         data : JSON.stringify(userData),
-        success: function(result) {
+        success: async function(result) {
             console.log("Sucess! User Created!", userData);
-            window.location.href = '/LandingPage';
+            // sessionStorage.setItem('user', JSON.stringify(result['user']));
+            window.location.href = '/CreateProfile';
         },
         error: function(request, status, error) {
             console.log("Error");
