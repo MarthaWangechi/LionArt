@@ -2,6 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'artist-profile-style.css')}}" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'artist-profile.js') }}"></script>
+    <script>
+        var user = {{user|tojson}};
+      </script>
   </head>
   <body>
     <div class="iphone-screen">
