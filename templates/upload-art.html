@@ -2,32 +2,34 @@
 <html>
   <head>
     <link rel="stylesheet"  href="{{ url_for('static', filename = 'upload-art-style.css')}}" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'upload-art.js') }}"></script>
+    <script>
+        var user = {{user|tojson}};
+    </script>
   </head>
   <body>
     <div class="iphone-screen">
         <div class="navigation-bar">
           <div class="navigation-bar-element"><a href="#" onclick="window.history.back()"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/back-button.png') }}" alt="Back Button"></a></div>
-            <div class="navigation-bar-element">LionArt</div>
-            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename='img/profile-button.png') }}" alt="Menu"></div>
+          <div class="upload-art">
+            Upload Art
+        </div>
         </div>
         <div class="upload-screen">
-            <div class="upload-art">
-                Upload Art
-            </div>
-            <a href = "">
-              <img class="upload-image" src="{{ url_for('static', filename='img/plus-sign.png') }}">
-            </a>
+            <label for="photoInput" class="instructions">Upload your jpg</label>
+            <input type="file" id="photoInput" accept="image/*">
             <div class="title">
                 <input class="title-text" type="text" placeholder="Title">
             </div>
             <div class="tags">
                 <p>Tags</p>
                 <div class="tag-list">
-                    <div class="tag">Photography</div>
-                    <div class="tag">Experimental</div>
                 </div>
                 <div class="add-tag-div">
-                  <button class="add-tag">+ Add tag</button>
+                  <div class="tag-form hidden">
+                    <input type="text" id="new-tag-input" placeholder="+ Add tag">
+                  </div>
                 </div>
             </div>
             <div class="description">

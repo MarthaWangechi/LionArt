@@ -10,7 +10,27 @@
         "artist-bio": "test bio test bio test bio",
         "instagram-link": "testinstagram.com",
         "portfolio-link": "testportfolio.com",
-        "posts": []
+        "posts": [
+            {
+                "id": 1,
+                "title": "title1",
+                "art-photo": "testuser1.jpg",
+                "tags": [
+                    "photography",
+                    "modern"
+                ],
+                "description": "Description of post 1"
+            },
+            {
+                "id": 2,
+                "title": "title2",
+                "art-photo": "testuser2.jpg",
+                "tags": [
+                    "abstract"
+                ],
+                "description": "Description of post 2"
+            }
+        ]
     },
     "shelbyw": {
         "username": "shelbyw",
@@ -23,16 +43,45 @@
         "artist-bio": "none",
         "instagram-link": "none",
         "portfolio-link": "none",
-        "posts": []
+        "posts": [
+        ]
     },
     "shel": {
-        "artist-bio": "I love art",
+        "artist-bio": "I love art so much! I lofjkadsljfdslhafasdhfkjdshajkfhdaskjfbdskjahfjhdsajkfhdksajve art so much! I love art so much! I love art so much! I love art so much!",
         "grad-year": "2024",
         "instagram-link": "none",
         "major": "Computer Science",
         "password": "123",
         "portfolio-link": "none",
-        "posts": [],
+        "posts": [
+            {
+                "art-photo": "shel1.jpg",
+                "title": "Ruminations of a Kid 1",
+                "description": "I was inspired by the freedom of letting my mind follow my hand.",
+                "id": 1,
+                "tags": [
+                    "abstract"
+                ]
+            },
+            {
+                "art-photo": "shel2.jpg",
+                "title": "Ruminations of a Kid 2",
+                "description": "I was inspired by the freedom of letting my mind follow my hand.",
+                "id": 2,
+                "tags": [
+                    "abstract"
+                ]
+            },
+            {
+                "art-photo": "shel3.jpg",
+                "title": "Ruminations of a Kid 3",
+                "description": "I was inspired by the freedom of letting my mind follow my hand.",
+                "id": 3,
+                "tags": [
+                    "abstract"
+                ]
+            }
+        ],
         "profile-name": "Shelby Wengreen",
         "profile-photo": "shel.jpg",
         "school": "SEAS",

@@ -89,7 +89,7 @@ function updateUserInfo() {
             });
             console.log("SHELBY", JSON.parse(sessionStorage.getItem('user')))
             setTimeout(function() {
-                // Redirect to the next page after 2000 milliseconds (2 seconds)
+                // Redirect to the next page after 5000 milliseconds (5 seconds)
                 window.location.href = '/ArtistProfile';
             }, 5000);
         },
