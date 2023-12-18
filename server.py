@@ -21,12 +21,12 @@ def display_start_page():
 def display_artist_profile(username):
     global local_user_copy
     if username is None:
-        return render_template('artist-profile.html', user=local_user_copy)
+        return render_template('artist-profile.html', user=local_user_copy, actualUser=local_user_copy)
     else:
         with open('users.json', 'r') as file:
             existing_users = json.load(file)
         user_data = existing_users[username]
-        return render_template('artist-profile.html', user=user_data)
+        return render_template('artist-profile.html', user=user_data, actualUser=local_user_copy)
 
 @app.route('/CreateAccount', methods=['GET','POST'])
 def display_create_account():

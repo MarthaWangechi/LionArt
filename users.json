@@ -2,10 +2,10 @@
     "testuser1": {
         "artist-bio": "test bio test bio test bio",
         "grad-year": "test grad year",
-        "instagram-link": "testinstagram.com",
+        "instagram-link": "https://www.instagram.com/",
         "major": "test major",
         "password": "123",
-        "portfolio-link": "testportfolio.com",
+        "portfolio-link": "https://www.instagram.com/",
         "posts": [
             {
                 "art-photo": "testuser1.jpg",
@@ -46,7 +46,7 @@
         "posts": []
     },
     "shel": {
-        "artist-bio": "I love art so much! I lofjkadsljfdslhafasdhfkjdshajkfhdaskjfbdskjahfjhdsajkfhdksajve art so much! I love art so much! I love art so much! I love art so much!",
+        "artist-bio": "I love art so much! I love art so much!  I love art so much!  I love art so much!  I love art so much! ",
         "grad-year": "2024",
         "instagram-link": "none",
         "major": "Computer Science",
