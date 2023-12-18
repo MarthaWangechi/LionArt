@@ -79,7 +79,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
 
 #forgot-password {
   padding-top: 35px;
-  font-family: Kantumruy;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -88,10 +87,10 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
 }
 
 .login-help-text {
+  padding-top: 20px;
   text-decoration: underline;
   padding-bottom: 15px;
   color: black;
-  font-family: Kantumruy;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;

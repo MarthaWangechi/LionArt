@@ -16,10 +16,17 @@ def display_start_page():
     return render_template('login-page.html')
 
 # TODO: Change this route to include the username once page is dynamic
-@app.route('/ArtistProfile') 
-def display_artist_profile():
+@app.route('/ArtistProfile/', defaults={'username': None})
+@app.route('/ArtistProfile/<username>')
+def display_artist_profile(username):
     global local_user_copy
-    return render_template('artist-profile.html', user=local_user_copy)
+    if username is None:
+        return render_template('artist-profile.html', user=local_user_copy)
+    else:
+        with open('users.json', 'r') as file:
+            existing_users = json.load(file)
+        user_data = existing_users[username]
+        return render_template('artist-profile.html', user=user_data)
 
 @app.route('/CreateAccount', methods=['GET','POST'])
 def display_create_account():
@@ -161,6 +168,30 @@ def display_login_page():
 def display_my_art():
     global local_user_copy
     return render_template('my-art.html', user=local_user_copy)
+
+@app.route('/FetchPosts', methods=['GET','POST'])
+def fetch_posts():
+
+    query = request.json.get('query')
+
+    print("Query", query)
+    with open('users.json', 'r') as file:
+        existing_users = json.load(file)
+    
+    all_posts = []
+
+    for user_data in existing_users.values():
+        posts = user_data.get('posts', []) 
+        for post in posts:
+            post["username"] = user_data["username"]
+            post["profile-name"] = user_data["profile-name"]
+            post["profile-photo"] = user_data["profile-photo"]
+            if query == "" or query in post["tags"]:
+                all_posts.append(post)
+    print(all_posts)
+    return jsonify({'posts': all_posts, 'message': 'Login successful'}), 200
+
+
 
 @app.after_request
 def after_response(response):

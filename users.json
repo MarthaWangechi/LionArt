@@ -1,36 +1,36 @@
 {
     "testuser1": {
-        "username": "testuser1",
-        "password": "123",
-        "profile-photo": "none",
-        "profile-name": "test user",
-        "school": "test school",
-        "grad-year": "test grad year",
-        "major": "test major",
         "artist-bio": "test bio test bio test bio",
+        "grad-year": "test grad year",
         "instagram-link": "testinstagram.com",
+        "major": "test major",
+        "password": "123",
         "portfolio-link": "testportfolio.com",
         "posts": [
             {
-                "id": 1,
-                "title": "title1",
                 "art-photo": "testuser1.jpg",
+                "description": "Description of post 1",
+                "id": 1,
                 "tags": [
                     "photography",
                     "modern"
                 ],
-                "description": "Description of post 1"
+                "title": "title1"
             },
             {
-                "id": 2,
-                "title": "title2",
                 "art-photo": "testuser2.jpg",
+                "description": "Description of post 2",
+                "id": 2,
                 "tags": [
                     "abstract"
                 ],
-                "description": "Description of post 2"
+                "title": "title2"
             }
-        ]
+        ],
+        "profile-name": "test user",
+        "profile-photo": "testuser1.jpg",
+        "school": "test school",
+        "username": "testuser1"
     },
     "shelbyw": {
         "username": "shelbyw",
@@ -43,8 +43,7 @@
         "artist-bio": "none",
         "instagram-link": "none",
         "portfolio-link": "none",
-        "posts": [
-        ]
+        "posts": []
     },
     "shel": {
         "artist-bio": "I love art so much! I lofjkadsljfdslhafasdhfkjdshajkfhdaskjfbdskjahfjhdsajkfhdksajve art so much! I love art so much! I love art so much! I love art so much!",

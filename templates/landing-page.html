@@ -2,6 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'landing-page-style.css')}}" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'landing-page.js') }}"></script>
+    <script>
+        var user = {{user|tojson}};
+    </script>
   </head>
   <body>
     <div class="iphone-screen">
@@ -10,74 +15,13 @@
             <div class="navigation-bar-element">LionArt</div>
             <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png') }}" alt="Menu"></div>
         </div>
+        <div class="search-bar">
+            <img class="search-icon" src="{{ url_for('static', filename = 'img/search.png') }}">
+            <input type="text" id="actual-search-bar" placeholder="Search">
+        </div>
         <div class="art-display">
-            <div class="scrollable-area">
-                <a href = "{{ url_for('display_artist_profile')}}">
-                    <div class="art-block">
-                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
-                        <div class="art-caption-block">
-                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
-                            <div class="art-caption">
-                                <div class="title">
-                                    Motion In Manhattan
-                                </div>
-                                <div class="artist-bio">
-                                    John Smith 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href = "{{ url_for('display_artist_profile')}}">
-                    <div class="art-block">
-                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/art-piece-2.png') }}">
-                        <div class="art-caption-block">
-                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
-                            <div class="art-caption">
-                                <div class="title">
-                                    Motion In Manhattan
-                                </div>
-                                <div class="artist-bio">
-                                    John Smith
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href = "{{ url_for('display_artist_profile')}}">
-                    <div class="art-block">
-                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
-                        <div class="art-caption-block">
-                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
-                            <div class="art-caption">
-                                <div class="title">
-                                    Motion In Manhattan
-                                </div>
-                                <div class="artist-bio">
-                                    John Smith
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href = "{{ url_for('display_artist_profile')}}">
-                    <div class="art-block">
-                        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
-                        <div class="art-caption-block">
-                            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
-                            <div class="art-caption">
-                                <div class="title">
-                                    Motion In Manhattan
-                                </div>
-                                <div class="artist-bio">
-                                    John Smith
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+            <div class="scrollable-area" id="postsContainer">
             </div>
-            
         </div>
         <!--
         <div class="navigation-bar">
@@ -88,3 +32,20 @@
     </div>
   </body>
 </html>
+
+<!-- <a href = "{{ url_for('display_artist_profile')}}">
+    <div class="art-block">
+        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
+        <div class="art-caption-block">
+            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
+            <div class="art-caption">
+                <div class="title">
+                    Motion In Manhattan
+                </div>
+                <div class="artist-bio">
+                    John Smith 
+                </div>
+            </div>
+        </div>
+    </div>
+</a> -->
