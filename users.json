@@ -5,7 +5,7 @@
         "instagram-link": "https://www.instagram.com/vincent.willem.vangogh/?hl=en",
         "major": "fine arts",
         "password": "123",
-        "portfolio-link": "vincent.com",
+        "portfolio-link": "https://www.vangoghmuseum.nl/en/art-and-stories/art/vincent-van-gogh",
         "posts": [
             {
                 "art-photo": "vincent1.jpg",
@@ -58,7 +58,7 @@
         "instagram-link": "https://www.instagram.com/claude._.monet/?hl=en",
         "major": "Fine arts",
         "password": "123",
-        "portfolio-link": "monetportfolio.com",
+        "portfolio-link": "https://www.claudemonetgallery.org/",
         "posts": [
             {
                 "art-photo": "monet1.jpg",
@@ -95,12 +95,12 @@
         "username": "monet"
     },
     "david": {
-        "artist-bio": "An influential Neoclassical painter, my works encapsulate the ideals of the French Revolution and the grandeur of classical antiquity. Through precision and narrative depth, I portrayed historical moments with an unwavering commitment to aesthetic and moral clarity. Join me in the exploration of art's power to convey the essence of the human experience. #JacquesLouisDavid #Neoclassicism",
+        "artist-bio": "My works encapsulate the ideals of the French Revolution and the grandeur of classical antiquity. Through precision and narrative depth, I portrayed historical moments with an unwavering commitment to aesthetic and moral clarity. Join me in the exploration of art's power to convey the essence of the human experience.",
         "grad-year": "1825",
-        "instagram-link": "davidinstagram.com",
+        "instagram-link": "https://www.instagram.com/jacqueslouisdavid48/?hl=en",
         "major": "Art History",
         "password": "123",
-        "portfolio-link": "davidportfolio.com",
+        "portfolio-link": "https://www.jacqueslouisdavid.org/",
         "posts": [
             {
                 "art-photo": "david1.jpg",

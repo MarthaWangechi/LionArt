@@ -1,46 +1,46 @@
 function renderCurrentUserInfo() {
     // user = JSON.parse(sessionStorage.getItem('user'));
     console.log("USER HERE", user)
-    var profilePic = document.getElementById("profile-pic-id")
-    var profilePicName = user["profile-photo"] == "none" ? "default.jpg" : user["profile-photo"]
-    console.log("profilePicName", profilePicName)
-    profilePic.src = "/static/img/user-profile-pics/" + profilePicName;
+    var profilePic = $("#profile-pic-id");
+    var profilePicName = user["profile-photo"] == "none" ? "default.jpg" : user["profile-photo"];
+    console.log("profilePicName", profilePicName);
+    profilePic.attr("src", "/static/img/user-profile-pics/" + profilePicName);
 
-
-    var profileName = document.getElementById("profile-name-id")
+    var profileName = $("#profile-name-id");
     if (user["profile-name"] != "none") {
-        profileName.value = user["profile-name"]
+        profileName.val(user["profile-name"]);
     }
 
-    var schoolName = document.getElementById("school-name-id")
+    var schoolName = $("#school-name-id");
     if (user["school"] != "none") {
-        schoolName.value = user["school"]
+        schoolName.val(user["school"]);
     }
 
-    var gradYear = document.getElementById("grad-year-name-id")
+    var gradYear = $("#grad-year-name-id");
     if (user["grad-year"] != "none") {
-        gradYear.value = user["grad-year"]
+        gradYear.val(user["grad-year"]);
     }
 
-    var majorName = document.getElementById("major-name-id")
+    var majorName = $("#major-name-id");
     if (user["major"] != "none") {
-        majorName.value = user["major"]
+        majorName.val(user["major"]);
     }
 
-    var bio = document.getElementById("description-input")
+    var bio = $("#description-input");
     if (user["artist-bio"] != "none") {
-        bio.value = user["artist-bio"]
+        bio.val(user["artist-bio"]);
     }
 
-    var insta = document.getElementById("insta")
+    var insta = $("#insta");
     if (user["instagram-link"] != "none") {
-        insta.value = user["instagram-link"]
+        insta.val(user["instagram-link"]);
     }
 
-    var portfolio = document.getElementById("portfolio")
+    var portfolio = $("#portfolio");
     if (user["portfolio-link"] != "none") {
-        portfolio.value = user["portfolio-link"]
+        portfolio.val(user["portfolio-link"]);
     }
+
 
 }
 
@@ -49,13 +49,13 @@ function updateUserInfo() {
     // user = JSON.parse(sessionStorage.getItem('user'));
     var updatedUserData = {}; 
 
-    updatedUserData["profile-name"] = document.getElementById("profile-name-id").value;
-    updatedUserData["school"] = document.getElementById("school-name-id").value;
-    updatedUserData["grad-year"] = document.getElementById("grad-year-name-id").value;
-    updatedUserData["major"] = document.getElementById("major-name-id").value;
-    updatedUserData["artist-bio"] = document.getElementById("description-input").value;
-    updatedUserData["instagram-link"] = document.getElementById("insta").value;
-    updatedUserData["portfolio-link"] = document.getElementById("portfolio").value;
+    updatedUserData["profile-name"] = $("#profile-name-id").val();
+    updatedUserData["school"] = $("#school-name-id").val();
+    updatedUserData["grad-year"] = $("#grad-year-name-id").val();
+    updatedUserData["major"] = $("#major-name-id").val();
+    updatedUserData["artist-bio"] = $("#description-input").val();
+    updatedUserData["instagram-link"] = $("#insta").val();
+    updatedUserData["portfolio-link"] = $("#portfolio").val();
 
     userData = user
     for (var key in userData) {
