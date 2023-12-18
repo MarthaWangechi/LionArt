@@ -13,7 +13,12 @@
         <div class="navigation-bar">
             <div class="navigation-bar-element"><a href="#" onclick="window.history.back()"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/back-button.png') }}" alt="Back Button"></a></div>
             <div class="navigation-bar-element">LionArt</div>
-            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png') }}" alt="Menu"></div>
+            <div class="navigation-bar-element"><img id="menu-profile-pic" class="navigation-bar-image" src="{{ url_for('static', filename = 'img/user-profile-pics/default.jpg') }}" alt="Menu"></div>
+            <div class="popup-menu">
+                <a href="{{ url_for('display_artist_profile') }}"><div>My profile</div></a>
+                <a href="{{ url_for('display_create_profile') }}"><div>Edit my profile</div></a>
+                <a href="{{ url_for('display_upload_art') }}"><div>Upload art</div></a>
+            </div>
         </div>
         <div class="search-bar">
             <img class="search-icon" src="{{ url_for('static', filename = 'img/search.png') }}">
@@ -23,29 +28,6 @@
             <div class="scrollable-area" id="postsContainer">
             </div>
         </div>
-        <!--
-        <div class="navigation-bar">
-            <div class="navigation-bar-element"><a href="#" onclick="window.history.back()"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/back-button.png') }}" alt="Back Button"></a></div>
-            <div class="navigation-bar-element">LionArt</div>
-            <div class="navigation-bar-element"><img class="navigation-bar-image" src="{{ url_for('static', filename = 'img/profile-button.png') }}" alt="Menu"></div>
-        </div> -->
     </div>
   </body>
 </html>
-
-<!-- <a href = "{{ url_for('display_artist_profile')}}">
-    <div class="art-block">
-        <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
-        <div class="art-caption-block">
-            <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
-            <div class="art-caption">
-                <div class="title">
-                    Motion In Manhattan
-                </div>
-                <div class="artist-bio">
-                    John Smith 
-                </div>
-            </div>
-        </div>
-    </div>
-</a> -->
