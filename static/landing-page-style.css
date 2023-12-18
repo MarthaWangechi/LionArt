@@ -309,18 +309,6 @@ a {
   height: 60px;
 }
 
-.bottom-navbar {
-position: fixed; /* Make the navbar fixed to the bottom of the viewport. */
-bottom: 0; /* Position it at the bottom. */
-width: 100vw; /* Make it full width. */
-height: 50px; /* Set your desired height for the navbar. */
-background-color: yellow; /* Choose a background color. */
-display: flex; /* Arrange content horizontally. */
-justify-content: space-between; /* Distribute content evenly. */
-align-items: center; /* Vertically center content. */
-/* Additional styling as needed for borders, text, icons, etc. */
-}
-
 .popup-menu {
   display: none;
   flex-direction: column;

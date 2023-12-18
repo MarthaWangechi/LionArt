@@ -164,12 +164,6 @@ def display_login_page():
         else:
             return jsonify({'message': 'Invalid username or password'}), 401
 
-# TODO: Combine this page with Artist Profile page
-@app.route('/MyArt')
-def display_my_art():
-    global local_user_copy
-    return render_template('my-art.html', user=local_user_copy)
-
 @app.route('/FetchPosts', methods=['GET','POST'])
 def fetch_posts():
 
