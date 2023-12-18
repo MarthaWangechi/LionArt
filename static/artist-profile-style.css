@@ -47,8 +47,7 @@ html {
 }
 
 .scrollable-area {
-    height: 432px;
-
+    height: 375px;
 }
 
 .artist-profile {
@@ -75,7 +74,6 @@ html {
     top: -200px;
     left: 50%;
     transform: translateX(-50%);
-    height: 300px;
     width: 300px;
     border: 2px solid rgb(255, 255, 255);
     background-color: white;
@@ -85,6 +83,7 @@ html {
 
 .spotlight-image {
     margin-bottom: 0px;
+    background-color: lightblue;
 }
 
 .spotlight-image img {
@@ -183,20 +182,28 @@ html {
 
 .profile-picture {
     width: 55px;
-    height: 53px;
-    vertical-align: middle;
-    padding-right: 20px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
   
 .title {
     font-weight: 700;
     font-size: 16px;
     padding-bottom: 7px;
+    padding-top: 10px;
 }
 
 .artist-bio {
     font-weight: 100px;
-    color: #A8A8A8;  
+    color: #A8A8A8;
+    padding-top: 5px;
+}
+
+.artist-bio-3 {
+    font-weight: 100px;
+    color: #A8A8A8;
+    margin: 0px;  
 }
 
 .artist-name-2 {
@@ -250,3 +257,176 @@ a {
     background-color: lightblue; 
     width: 100px;
   }
+
+.links {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.links a {
+    margin: 0 10px; 
+}
+
+.links img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.art-piece-block-2 {
+    width: 370px;
+    height: 331px;
+    border: 0px;
+  }
+  
+  #about {
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    font-style: normal;
+    margin-bottom: 5px;
+  }
+  
+  .long-intro {
+    font-family: "SFPro Text-Semibold", Helvetica;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    margin-top: 14px;
+    color: #A8A8A8;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 376px;
+    height: 120px;
+  }
+  
+  .navigation-bar-2 {
+    width: 365px;
+    height: 35px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation-bar-element-2 {
+    display: inline-block;
+    margin-right: 7px;
+    font-weight: bold;
+    font-size: 28px;
+    height: 20px;
+    width: 260px;
+    text-align: center;
+  
+  }
+  
+  .artist-name-box {
+    width: 365px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .artist-name-box .artist-name {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-weight: 300;
+    color: #888888;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .tag-list {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  
+  .profile-picture-2 {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+  
+  }
+  
+  .tag {
+    border: 2px solid rgb(255, 255, 255);
+    width: 152px;
+    height: 33px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .external-links {
+    height: 60px;
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    z-index: -1;
+    position:relative;
+  }
+  
+  .external-links img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .bottom-navbar {
+  position: fixed; /* Make the navbar fixed to the bottom of the viewport. */
+  bottom: 0; /* Position it at the bottom. */
+  width: 100vw; /* Make it full width. */
+  height: 50px; /* Set your desired height for the navbar. */
+  background-color: yellow; /* Choose a background color. */
+  display: flex; /* Arrange content horizontally. */
+  justify-content: space-between; /* Distribute content evenly. */
+  align-items: center; /* Vertically center content. */
+  /* Additional styling as needed for borders, text, icons, etc. */
+  }
+  
+  .popup-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 275px;
+    top: 60px;
+    width: 100px;
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 10%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+  }
+  
+  .popup-menu a {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-decoration: none;
+  }
+  
+  .popup-menu div:hover {
+    background-color: lightblue; 
+    width: 100px;
+  }
+  
+  

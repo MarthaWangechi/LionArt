@@ -7,6 +7,9 @@
     <script>
         var user = {{user|tojson}};
     </script>
+    <script>
+        var actualUser = {{actualUser|tojson}};
+    </script>
   </head>
   <body>
     <div class="iphone-screen">
@@ -23,7 +26,7 @@
         <div class="artist-profile">
             <div class="scrollable-area">
                 <div class="spotlight-image">
-                    <img src="{{ url_for('static', filename = 'img/profile-pg-background.png')}}">
+                    <!-- <img src="{{ url_for('static', filename = 'img/profile-pg-background.png')}}"> -->
                 </div>
                 <div class="artist-bio-block">
                     <div class="pic-and-name">
@@ -38,43 +41,16 @@
                             <span id="artist-bio">A mystery artist!</span>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="art-block">
-                <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
-                <div class="art-caption-block">
-                    <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
-                    <div class="art-caption">
-                        <div class="title">
-                            Motion In Manhattan
-                        </div>
-                        <div class="artist-name-2">
-                            John Smith 
-                        </div>
+                    <div class="links">
+                        <!-- <a href="#" id="instagram-link"><img src="{{ url_for('static', filename = 'img/instagram-logo.png')}}"></a>
+                        <a href="#" id="personal-portfolio"><img src="{{ url_for('static', filename = 'img/website-link.png')}}"></a> -->
                     </div>
                 </div>
             </div>
-
-            <div class="art-block">
-                <img class="art-piece-block" src="{{ url_for('static', filename = 'img/john_art.png') }}">
-                <div class="art-caption-block">
-                    <img class="profile-picture" src="{{ url_for('static', filename = 'img/john_pic.png') }}">
-                    <div class="art-caption">
-                        <div class="title">
-                            Motion In Manhattan
-                        </div>
-                        <div class="artist-name-2">
-                            John Smith 
-                        </div>
-                    </div>
+            <div class="art-display">
+                <div class="scrollable-area" id="postsContainer">
                 </div>
             </div>
-        </div>
-        <div class="external-links">
-            <img class="link-img" src="{{ url_for('static', filename = 'img/instagram-logo.png')}}">
-            <img class="link-img" src="{{ url_for('static', filename = 'img/website-link.png')}}">
-            <img class="link-img" src="{{ url_for('static', filename = 'img/share-profile.png')}}">
-        </div>
     </div>
   </body>
 </html>
