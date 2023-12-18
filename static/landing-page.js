@@ -20,7 +20,6 @@ function fetchPosts(query) {
                     title = post["title"]
                     profileName = post["profile-name"]
                     const postElement = `
-                    <a href = "${'/ArtistProfile/' + username}">
                     <div class="art-block">
                         <img class="art-piece-block" src="${'/static/img/posts/' + artPhoto}">
                         <div class="art-caption-block">
@@ -35,9 +34,13 @@ function fetchPosts(query) {
                             </div>
                         </div>
                     </div>
-                </a>
                     `;
-                    postsContainer.append(postElement);
+                const $postElement = $(postElement)
+
+                $postElement.on('click', function() {
+                    displayPostDetails(post)
+                });
+                postsContainer.append($postElement);
                 });
             } else {
                 postsContainer.html('<p>No posts found</p>');
@@ -53,6 +56,70 @@ function fetchPosts(query) {
     });
 
 }
+
+function displayPostDetails(post) {
+    username = post["username"]
+    artPhoto = post["art-photo"]
+    profilePhoto = post["profile-photo"]
+    title = post["title"]
+    profileName = post["profile-name"]
+    description = post["description"]
+
+    tags = post["tags"]
+    let tagElements = ``
+    if (tags && tags.length > 0) {
+        tagElements = tags.map(tag => `<div class="tag">${tag}</div>`).join('')
+    }
+
+    const popUp = `
+        <div class="pop-up">
+        <div class="artist-bio-2">
+        <div class="navigation-bar-2">
+            <div class="navigation-bar-element">
+                <a href="#" class="back-button"><img class="navigation-bar-image" src="/static/img/back-button.png" alt="Back Button"></a>
+            </div>
+            <div class="navigation-bar-element-2">${title}</div>
+        </div>
+                <div class="artist-name-box">
+                    <div class="artist-name">By ${profileName}</div>
+                </div>
+                <img class="art-piece-block-2" src="${'/static/img/posts/' + artPhoto}">
+                <div class="long-intro">
+                    ${description}
+                </div>
+                <div class="tag-list">
+                    ${tagElements}
+                </div>
+                <div>
+                <a href="/ArtistProfile/${username}"> 
+                    <img class="profile-picture-2" src="${'/static/img/user-profile-pics/' + profilePhoto}">
+                </a>
+                </div>
+        </div>
+        </div>
+    `;
+
+    $('.iphone-screen').append(popUp);
+
+    $('.back-button').on('click', function(event) {
+        event.preventDefault(); 
+        $('.pop-up').remove();
+    });
+
+
+}
+
+{/* <div class="popup">
+<div class="popup-content">
+    <!-- Display detailed post information -->
+    <h2>${postData.title}</h2>
+    <p>Username: ${postData.username}</p>
+    <p>Art Photo: <img src="/static/img/posts/${postData['art-photo']}" alt="Art"></p>
+    <p>Profile Photo: <img src="/static/img/user-profile-pics/${postData['profile-photo']}" alt="Profile"></p>
+    <!-- Add more post details as needed -->
+    <button onclick="closePopup()">Close</button>
+</div>
+</div> */}
 
 $(document).ready(function() {
     $('#actual-search-bar').keypress(function(event) {
