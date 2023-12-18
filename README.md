@@ -1,15 +1,13 @@
 # LionArt
 To run our website locally: python server.py
 
-Please note that any uploaded images must have the file extension in their name!
+Please note that any uploaded images must be jpg's and have the file extension in their name. 
+
+We have provided a folder called /test-imgs with test imgs so that you can easily test our website
 
 We referenced the lecture notes from the flask lecture to write server.py. We also referenced the lecture notes from the javascript/html
 lecture. We also consulted stack overflow when we were having trouble linking out html views together on our local server. We referenced
-stack overflow for other small html issues as well.
-
-We used flask and so far we created html and css files for all of the major screens of our app. We have not yet added any dynamic content that
-would require using javascript. This means we have not yet implemented our menu in the upper right hand corner for navigating between screens.
-However most of the other buttons work (log in, create account, discover more, clicking on an art piece, clicking on an artist profile image, etc.)
+stack overflow for other small html, css, and js issues as well.
 
 All screens are easily accessible via their URLS though:
 Route	             HTML File
@@ -19,5 +17,4 @@ Route	             HTML File
 /CreateProfile	     create-profile.html
 /LandingPage	     landing-page.html
 /Login	             login-page.html
-/MyArt	             my-art.html
 /UploadArt	         upload-art.html

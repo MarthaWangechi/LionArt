@@ -24,12 +24,10 @@ html {
 .navigation-bar {
     width: 390px;
     height: 50px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-bottom: 15px; */
+    color: #0273DB;
   }
 
 .navigation-bar-element {
@@ -71,7 +69,7 @@ html {
 
 .artist-bio-block {
     position: relative;
-    top: -200px;
+    top: -150px;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
@@ -85,11 +83,15 @@ html {
 .spotlight-image {
     margin-bottom: 0px;
     background-color: lightblue;
+    width: 390px;
+    height: 250px;
 }
 
 .spotlight-image img {
-    width: 390px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     border: none;
 }
 
@@ -141,6 +143,10 @@ html {
     color: #A8A8A8;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.art-display {
+  margin-top: 150px;
 }
 
 .discover-link {
@@ -239,7 +245,7 @@ a {
     flex-direction: column;
     position: absolute;
     left: 275px;
-    top: 60px;
+    top: 50px;
     width: 100px;
     background-color: lightblue;
     padding: 5px;
@@ -392,18 +398,6 @@ a {
   .external-links img {
     width: 60px;
     height: 60px;
-  }
-  
-  .bottom-navbar {
-  position: fixed; /* Make the navbar fixed to the bottom of the viewport. */
-  bottom: 0; /* Position it at the bottom. */
-  width: 100vw; /* Make it full width. */
-  height: 50px; /* Set your desired height for the navbar. */
-  background-color: yellow; /* Choose a background color. */
-  display: flex; /* Arrange content horizontally. */
-  justify-content: space-between; /* Distribute content evenly. */
-  align-items: center; /* Vertically center content. */
-  /* Additional styling as needed for borders, text, icons, etc. */
   }
   
   .popup-menu {

@@ -1,33 +1,32 @@
 function renderArtistDetails() {
     console.log("SHELBY USER", user)
-    var profilePic = document.getElementById("artist-profile-pic")
-    var profilePicName = user["profile-photo"] == "none" ? "default.jpg" : user["profile-photo"]
-    profilePic.src = "/static/img/user-profile-pics/" + profilePicName;
+    var profilePic = $("#artist-profile-pic");
+    var profilePicName = user["profile-photo"] == "none" ? "default.jpg" : user["profile-photo"];
+    profilePic.attr("src", "/static/img/user-profile-pics/" + profilePicName);
 
-
-    var profileName = document.getElementById("artist-name")
+    var profileName = $("#artist-name");
     if (user["profile-name"] != "none") {
-        profileName.textContent = user["profile-name"]
+        profileName.text(user["profile-name"]);
     }
 
-    var majorName = document.getElementById("major-name-id")
+    var majorName = $("#major-name-id");
     if (user["major"] != "none") {
-        majorName.textContent  = user["major"]
+        majorName.text(user["major"]);
     }
 
-    var schoolName = document.getElementById("school-name-id")
+    var schoolName = $("#school-name-id");
     if (user["school"] != "none") {
-        schoolName.textContent = user["school"]
+        schoolName.text(user["school"]);
     }
 
-    var gradYear = document.getElementById("grad-year-name-id")
+    var gradYear = $("#grad-year-name-id");
     if (user["grad-year"] != "none") {
-        gradYear.textContent  = user["grad-year"]
+        gradYear.text(user["grad-year"]);
     }
 
-    var bio = document.getElementById("artist-bio")
+    var bio = $("#artist-bio");
     if (user["artist-bio"] != "none") {
-        bio.textContent  = user["artist-bio"]
+        bio.text(user["artist-bio"]);
     }
 
     var links = $('.links')
