@@ -42,5 +42,15 @@ function renderArtistDetails() {
 }
 
 $(document).ready(function() {
+    var menuProfilePic = $("#menu-profile-pic")[0];
+    if (user != "none") {
+        var profilePicName = user["profile-photo"] === "none" ? "default.jpg" : user["profile-photo"];
+        menuProfilePic.src = "/static/img/user-profile-pics/" + profilePicName;
+    } 
+
+    $('#menu-profile-pic').click(function() {
+        $('.popup-menu').toggle(); 
+    });
+    
     renderArtistDetails()
 })

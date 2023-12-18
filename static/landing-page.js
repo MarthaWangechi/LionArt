@@ -122,10 +122,20 @@ function displayPostDetails(post) {
 </div> */}
 
 $(document).ready(function() {
+
+    var menuProfilePic = $("#menu-profile-pic")[0];
+    if (user != "none") {
+        var profilePicName = user["profile-photo"] === "none" ? "default.jpg" : user["profile-photo"];
+        menuProfilePic.src = "/static/img/user-profile-pics/" + profilePicName;
+    }  
     $('#actual-search-bar').keypress(function(event) {
         if (event.which === 13) { 
             const searchQuery = $(this).val().trim(); 
             fetchPosts(searchQuery);
         }
+    });
+
+    $('#menu-profile-pic').click(function() {
+        $('.popup-menu').toggle(); 
     });
 })
