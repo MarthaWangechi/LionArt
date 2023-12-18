@@ -28,13 +28,11 @@ p {
   }
 
 .navigation-bar {
+    padding-top: 10px;
     width: 390px;
     height: 50px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 15px;
   }
 
@@ -63,8 +61,7 @@ p {
     font-size: 25px;
     font-weight: bold;
     line-height: 20px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    padding-left: 75px;
 }
 
 .upload-image{
@@ -72,32 +69,48 @@ p {
     height: 74px;
     border: 0px solid rgb(255, 255, 255);
     margin-top: 75px;
+    margin-bottom: 15px;
 }
+
+.instructions {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.photoInput {
+    padding-left: 60px;
+    margin: 0px;
+    padding-bottom: 25px;
+}
+
 
 .title {
     margin-top: 85px;
 }
 
 p {
-    width: 370px;
+    width: 350px;
     text-align: left;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 40px;
 }
 
 .title-text {
-    width: 370px;
+    width: 350px;
     color: #A8A8A8A8;
     border-top: 0px white; 
     border-right: 0px white; 
     border-left: 0px white; 
     border-bottom: 1px solid black;
     margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .tags {
     margin-top: 45px;
+    width: 350px;
+    height: 220px;
 }
 
 .tag {
@@ -137,6 +150,35 @@ p {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+#photoInput {
+    /* Style your button to resemble the tag input */
+    display: inline-block;
+    cursor: pointer;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #0273DB;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 5px; /* Adjust padding as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+#new-tag-input {
+    width: 152px;
+    height: 33px;
+    border: 2pt solid #0273DB;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#new-tag-input::placeholder {
+    text-align: center;
+    color: black;
+}
+
 .add-tag-div {
     margin-top: 30px;
     display: flex; 
@@ -146,16 +188,16 @@ p {
 }
 
 .description {
-    margin-top: 25px;
+    margin-top: 55px;
+    margin-left: 10px;
 }
 
 #description-input {
     border: 1pt solid rgb(177, 174, 174);
     color: #A8A8A8A8;
     background-color: white;
-    width: 350px;
+    width: 340px;
     height: 100px;
-    margin-left: 35px;
 }
 
 #description-input::placeholder {

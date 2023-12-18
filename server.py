@@ -92,7 +92,47 @@ def display_create_profile():
 
         print(jsonify({'user': existing_users[user_data['username']], 'message': 'Profile Successfuly Updated'}), 200)
         return jsonify({'user': existing_users[user_data['username']], 'message': 'Profile Successfuly Updated'}), 200
-        
+    
+@app.route('/UploadArt', methods=['GET','POST'])
+def display_upload_art():
+    global local_user_copy
+    if request.method == 'GET':
+        return render_template('upload-art.html', user=local_user_copy)
+    elif request.method == 'POST':
+        print("SHELBY ATTEMPTING TO UPLOAD ART")
+        print(local_user_copy)
+        id = len(local_user_copy["posts"]) + 1
+        post = {}
+        if 'image' in request.files:
+            file = request.files['image']
+            fileExtension = mimetypes.guess_extension(file.mimetype)
+            print("fileExtension", fileExtension)
+            print("SHELBY FILENAME", file.filename)
+            file.save(os.path.join('./static/img/posts/', local_user_copy["username"] + str(id) + fileExtension))
+            post["art-photo"] = local_user_copy["username"] + str(id) + fileExtension
+        title = request.form['title']
+        description = request.form['description']
+        tags = request.form.get('tags')
+        post["title"] = title
+        post["description"] = description
+        post["id"] = id
+        post["tags"] = json.loads(tags)
+
+        local_user_copy["posts"].append(post)
+
+        with open('users.json', 'r') as file:
+            existing_users = json.load(file)
+
+        existing_users[local_user_copy["username"]] = local_user_copy
+
+        with open('users.json', 'w') as file:
+            json.dump(existing_users, file, indent=4)
+
+        print(jsonify({'user': existing_users[local_user_copy['username']], 'message': 'Profile Successfuly Updated'}), 200)
+        return jsonify({'user': existing_users[local_user_copy['username']], 'message': 'Profile Successfuly Updated'}), 200
+
+
+
 
 @app.route('/LandingPage', methods=['GET','POST'])
 def display_landing_page():
@@ -122,10 +162,12 @@ def display_my_art():
     global local_user_copy
     return render_template('my-art.html', user=local_user_copy)
 
-@app.route('/UploadArt')
-def display_upload_art():
-    global local_user_copy
-    return render_template('upload-art.html', user=local_user_copy)
+@app.after_request
+def after_response(response):
+    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate, public, mmax-age=0"
+    response.headers["Expires"] = 0
+    response.headers["Pragma"] = "no-cache"
+    return response
 
 if __name__ == '__main__':
    app.run(debug = True)
