@@ -85,5 +85,133 @@
         "profile-photo": "shel.jpg",
         "school": "SEAS",
         "username": "shel"
+    },
+    "vincent": {
+        "artist-bio": "A visionary artist captivated by the profound beauty of the world. Through swirling brushstrokes and vibrant hues, I sought to convey the essence of life and emotion on canvas. Join me on a journey through the depths of art and introspection. #VincentVanGogh #ArtisticLegacy",
+        "grad-year": "1890",
+        "instagram-link": "vincentinstagram.com",
+        "major": "fine arts",
+        "password": "123",
+        "portfolio-link": "vincent.com",
+        "posts": [
+            {
+                "art-photo": "vincent1.jpg",
+                "description": "painting i did of this cafe i go to at night",
+                "id": 1,
+                "tags": [
+                    "postimpressionism",
+                    "modern"
+                ],
+                "title": "The Night Cafe"
+            },
+            {
+                "art-photo": "vincent2.jpg",
+                "description": "I painted these blue flowers thinking of you",
+                "id": 2,
+                "tags": [
+                    "postimpressionism",
+                    "floral"
+                ],
+                "title": "Irises"
+            },
+            {
+                "art-photo": "vincent3.jpg",
+                "description": "Painted this picture of my bedroom so my future roommate would know what he's getting into",
+                "id": 3,
+                "tags": [
+                    "modern"
+                ],
+                "title": "Bedroom in Arles"
+            }
+        ],
+        "profile-name": "Vincent Van Gogh",
+        "profile-photo": "vincent.jpg",
+        "school": "CC",
+        "username": "vincent"
+    },
+    "monet": {
+        "artist-bio": "A master of Impressionism, I painted the transient beauty of nature with a meticulous eye for light and color. My canvases are windows to the fleeting moments that define existence. Join me in exploring the nuances of perception and the timeless allure of the natural world. #ClaudeMonet #ImpressionismMasters",
+        "grad-year": "1926",
+        "instagram-link": "monetinstagram.com",
+        "major": "Fine arts",
+        "password": "123",
+        "portfolio-link": "monetportfolio.com",
+        "posts": [
+            {
+                "art-photo": "monet1.jpg",
+                "description": "Throwback to when I painted this and started the whole impressionist movement haha #humble",
+                "id": 1,
+                "tags": [
+                    "impressionism",
+                    "modern"
+                ],
+                "title": "Impression (Sunrise)"
+            },
+            {
+                "art-photo": "monet2.jpg",
+                "description": "Started painting this when I realized I wanted more color in my life!",
+                "id": 2,
+                "tags": [
+                    "abstract"
+                ],
+                "title": "Waterlilies"
+            }, 
+            {
+                "art-photo": "monet3.jpg",
+                "description": "Lovely day with my ladies!",
+                "id": 3,
+                "tags": [
+                    "modern"
+                ],
+                "title": "Women in the Garden"
+            }
+        ],
+        "profile-name": "Claude Monet",
+        "profile-photo": "monet.jpg",
+        "school": "Barnard",
+        "username": "monet"
+    },
+    "david": {
+        "artist-bio": "An influential Neoclassical painter, my works encapsulate the ideals of the French Revolution and the grandeur of classical antiquity. Through precision and narrative depth, I portrayed historical moments with an unwavering commitment to aesthetic and moral clarity. Join me in the exploration of art's power to convey the essence of the human experience. #JacquesLouisDavid #Neoclassicism",
+        "grad-year": "1825",
+        "instagram-link": "davidinstagram.com",
+        "major": "Art History",
+        "password": "123",
+        "portfolio-link": "davidportfolio.com",
+        "posts": [
+            {
+                "art-photo": "david1.jpg",
+                "description": "So done with the aristocracy fr!",
+                "id": 1,
+                "tags": [
+                    "neoclassical",
+                    "painting"
+                ],
+                "title": "Oath of the Horatii"
+            },
+            {
+                "art-photo": "david2.jpg",
+                "description": "Dropping another masterpiece today #casual",
+                "id": 2,
+                "tags": [
+                    "neoclassical"
+                ],
+                "title": "The Death of Socrates"
+            }, 
+            {
+                "art-photo": "david3.jpg",
+                "description": "Some say it's political #ripmarat",
+                "id": 3,
+                "tags": [
+                    "neoclassical",
+                    "painting"
+                ],
+                "title": "The Death of Marat"
+            }
+        ],
+        "profile-name": "Jacques-Louis David",
+        "profile-photo": "david.jpg",
+        "school": "GS",
+        "username": "david"
     }
 }
