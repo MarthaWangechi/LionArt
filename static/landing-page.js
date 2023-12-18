@@ -123,6 +123,8 @@ function displayPostDetails(post) {
 
 $(document).ready(function() {
 
+    fetchPosts("")
+
     var menuProfilePic = $("#menu-profile-pic")[0];
     if (user != "none") {
         var profilePicName = user["profile-photo"] === "none" ? "default.jpg" : user["profile-photo"];

@@ -5,6 +5,7 @@ import json
 from os import path 
 import os
 import mimetypes
+import random
 
 app = Flask(__name__)
 app.secret_key = 'secret_key' 
@@ -189,6 +190,7 @@ def fetch_posts():
             if query == "" or query in post["tags"]:
                 all_posts.append(post)
     print(all_posts)
+    random.shuffle(all_posts)
     return jsonify({'posts': all_posts, 'message': 'Login successful'}), 200
 
 

@@ -1,95 +1,8 @@
 {
-    "testuser1": {
-        "artist-bio": "test bio test bio test bio",
-        "grad-year": "test grad year",
-        "instagram-link": "https://www.instagram.com/",
-        "major": "test major",
-        "password": "123",
-        "portfolio-link": "https://www.instagram.com/",
-        "posts": [
-            {
-                "art-photo": "testuser1.jpg",
-                "description": "Description of post 1",
-                "id": 1,
-                "tags": [
-                    "photography",
-                    "modern"
-                ],
-                "title": "title1"
-            },
-            {
-                "art-photo": "testuser2.jpg",
-                "description": "Description of post 2",
-                "id": 2,
-                "tags": [
-                    "abstract"
-                ],
-                "title": "title2"
-            }
-        ],
-        "profile-name": "test user",
-        "profile-photo": "testuser1.jpg",
-        "school": "test school",
-        "username": "testuser1"
-    },
-    "shelbyw": {
-        "username": "shelbyw",
-        "password": "123",
-        "profile-photo": "none",
-        "profile-name": "none",
-        "school": "none",
-        "grad-year": "none",
-        "major": "none",
-        "artist-bio": "none",
-        "instagram-link": "none",
-        "portfolio-link": "none",
-        "posts": []
-    },
-    "shel": {
-        "artist-bio": "I love art so much! I love art so much!  I love art so much!  I love art so much!  I love art so much! ",
-        "grad-year": "2024",
-        "instagram-link": "none",
-        "major": "Computer Science",
-        "password": "123",
-        "portfolio-link": "none",
-        "posts": [
-            {
-                "art-photo": "shel1.jpg",
-                "title": "Ruminations of a Kid 1",
-                "description": "I was inspired by the freedom of letting my mind follow my hand.",
-                "id": 1,
-                "tags": [
-                    "abstract"
-                ]
-            },
-            {
-                "art-photo": "shel2.jpg",
-                "title": "Ruminations of a Kid 2",
-                "description": "I was inspired by the freedom of letting my mind follow my hand.",
-                "id": 2,
-                "tags": [
-                    "abstract"
-                ]
-            },
-            {
-                "art-photo": "shel3.jpg",
-                "title": "Ruminations of a Kid 3",
-                "description": "I was inspired by the freedom of letting my mind follow my hand.",
-                "id": 3,
-                "tags": [
-                    "abstract"
-                ]
-            }
-        ],
-        "profile-name": "Shelby Wengreen",
-        "profile-photo": "shel.jpg",
-        "school": "SEAS",
-        "username": "shel"
-    },
     "vincent": {
         "artist-bio": "A visionary artist captivated by the profound beauty of the world. Through swirling brushstrokes and vibrant hues, I sought to convey the essence of life and emotion on canvas. Join me on a journey through the depths of art and introspection. #VincentVanGogh #ArtisticLegacy",
         "grad-year": "1890",
-        "instagram-link": "vincentinstagram.com",
+        "instagram-link": "https://www.instagram.com/vincent.willem.vangogh/?hl=en",
         "major": "fine arts",
         "password": "123",
         "portfolio-link": "vincent.com",
@@ -122,6 +35,16 @@
                     "modern"
                 ],
                 "title": "Bedroom in Arles"
+            },
+            {
+                "art-photo": "vincent4.jpg",
+                "title": "The Potato Eaters",
+                "description": "Yum! Potatoes are so good!",
+                "id": 4,
+                "tags": [
+                    "potato",
+                    "impressionism"
+                ]
             }
         ],
         "profile-name": "Vincent Van Gogh",
@@ -130,9 +53,9 @@
         "username": "vincent"
     },
     "monet": {
-        "artist-bio": "A master of Impressionism, I painted the transient beauty of nature with a meticulous eye for light and color. My canvases are windows to the fleeting moments that define existence. Join me in exploring the nuances of perception and the timeless allure of the natural world. #ClaudeMonet #ImpressionismMasters",
+        "artist-bio": "A master of Impressionism, I painted the transient beauty of nature with a meticulous eye for light and color. Join me in exploring the nuances of perception and the timeless allure of the natural world. #ClaudeMonet #ImpressionismMasters",
         "grad-year": "1926",
-        "instagram-link": "monetinstagram.com",
+        "instagram-link": "https://www.instagram.com/claude._.monet/?hl=en",
         "major": "Fine arts",
         "password": "123",
         "portfolio-link": "monetportfolio.com",
@@ -145,7 +68,7 @@
                     "impressionism",
                     "modern"
                 ],
-                "title": "Impression (Sunrise)"
+                "title": "Impression"
             },
             {
                 "art-photo": "monet2.jpg",
@@ -155,7 +78,7 @@
                     "abstract"
                 ],
                 "title": "Waterlilies"
-            }, 
+            },
             {
                 "art-photo": "monet3.jpg",
                 "description": "Lovely day with my ladies!",
@@ -197,7 +120,7 @@
                     "neoclassical"
                 ],
                 "title": "The Death of Socrates"
-            }, 
+            },
             {
                 "art-photo": "david3.jpg",
                 "description": "Some say it's political #ripmarat",

@@ -75,6 +75,7 @@ html {
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
+    height: 400px;
     border: 2px solid rgb(255, 255, 255);
     background-color: white;
     border-radius: 10px;
@@ -259,6 +260,7 @@ a {
   }
 
 .links {
+    padding-top: 55px;
     display: flex;
     justify-content: center; 
     align-items: center; 
